@@ -18,14 +18,14 @@ export default function EmbeddedAgentSection() {
   };
 
   return (
-    <section id="embed-agent" className="py-16 bg-[#FAF6F0] bg-dot-mesh border-t border-slate-200/80 font-sans relative">
+    <section id="embed-agent" className="py-16 bg-slate-50/50 border-t border-slate-200/80 font-sans relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* --- HEADER BLOCK --- */}
-        <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-50 text-[#D83025] text-xs font-semibold tracking-wide border border-red-100 shadow-xs">
-            <span>EMBEDDED AI AGENT</span>
-          </div>
+        <div className="text-center max-w-3xl mx-auto mb-12 space-y-2">
+          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+            Embedded AI Agent
+          </p>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 font-['Outfit'] tracking-tight">
             Add AI to your product <span className="text-[#D83025]">in one line</span>

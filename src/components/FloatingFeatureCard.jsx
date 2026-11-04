@@ -37,28 +37,28 @@ export default function FloatingFeatureCard({ type, className = '' }) {
   return (
     <div
       onClick={() => setActive(!active)}
-      className={`kanta-glass-card rounded-xl px-3 py-2 flex items-center justify-between gap-2.5 cursor-pointer select-none transition-colors duration-200 w-full max-w-[240px] ${
+      className={`kanta-glass-card rounded-xl px-4 py-3 flex items-center justify-between gap-3 cursor-pointer select-none transition-colors duration-200 w-full max-w-[300px] ${
         active ? 'border-[#D83025] ring-2 ring-red-500/20 bg-white' : ''
       } ${className}`}
     >
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-3">
         {/* Icon Box */}
         <div
-          className={`w-6 h-6 rounded-md flex items-center justify-center transition-colors ${
+          className={`w-8 h-8 rounded-lg flex items-center justify-center transition-colors shrink-0 ${
             active
               ? 'bg-[#D83025] text-white shadow-xs'
               : 'bg-slate-100 text-slate-700 group-hover:bg-red-50 group-hover:text-[#D83025]'
           }`}
         >
-          <IconComponent size={13} />
+          <IconComponent size={16} />
         </div>
 
         {/* Labels */}
         <div className="text-left">
-          <h4 className="text-[10px] font-bold text-slate-900 leading-tight">
+          <h4 className="text-sm font-bold text-slate-900 leading-tight">
             {current.title}
           </h4>
-          <p className="text-[8.5px] text-slate-500 font-medium leading-tight">
+          <p className="text-xs text-slate-500 font-medium leading-tight">
             {current.subtitle}
           </p>
         </div>
@@ -66,12 +66,13 @@ export default function FloatingFeatureCard({ type, className = '' }) {
 
       {/* Status indicator on hover/click */}
       {active ? (
-        <span className="w-4 h-4 rounded-full bg-emerald-500 text-white flex items-center justify-center text-[10px]">
+        <span className="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs">
           ✓
         </span>
       ) : (
-        <div className="w-1.5 h-1.5 rounded-full bg-slate-300"></div>
+        <div className="w-2 h-2 rounded-full bg-slate-300"></div>
       )}
     </div>
   );
 }
+

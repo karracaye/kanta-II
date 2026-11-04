@@ -17,15 +17,14 @@ export default function ProblemSolutionSection({ onBookDemo }) {
   const [activeMode, setActiveMode] = useState('kanta');
 
   return (
-    <section id="stack-comparison" className="py-16 bg-gradient-to-b from-white via-[#FAF6F0] to-white bg-grid-pattern border-t border-slate-200/80 text-slate-900 font-sans relative overflow-hidden">
+    <section id="stack-comparison" className="py-16 bg-gradient-to-b from-white via-slate-50/50 to-white border-t border-slate-200/80 text-slate-900 font-sans relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* --- HEADER BLOCK --- */}
-        <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-50 text-[#D83025] border border-red-100 text-xs font-semibold shadow-xs">
-            <span className="w-2 h-2 rounded-full bg-[#D83025]"></span>
-            <span>PLATFORM TRANSFORMER</span>
-          </div>
+        <div className="text-center max-w-3xl mx-auto mb-12 space-y-2">
+          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+            Platform Transformer
+          </p>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-['Outfit'] tracking-tight text-slate-900 leading-tight">
             Your AI stack is <span className="text-[#D83025]">too fragmented</span>

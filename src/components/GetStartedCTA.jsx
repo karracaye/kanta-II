@@ -25,9 +25,9 @@ export default function GetStartedCTA({ onBookDemo }) {
             
             {/* Left Column: Compact Copy */}
             <div className="md:col-span-7 space-y-2">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-50 text-[#D83025] text-[10px] font-bold uppercase tracking-wider border border-red-100">
-                <span>GET STARTED</span>
-              </div>
+              <p className="text-xs font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+                Get Started
+              </p>
 
               <h2 className="text-2xl sm:text-3xl font-extrabold font-['Outfit'] tracking-tight text-slate-900 leading-snug">
                 Ready to unify your <span className="text-[#D83025]">AI stack?</span>

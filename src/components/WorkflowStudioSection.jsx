@@ -58,16 +58,16 @@ export default function WorkflowStudioSection() {
   ];
 
   return (
-    <section id="workflow-studio" className="py-16 bg-white bg-grid-pattern border-t border-slate-200/80 font-sans relative">
+    <section id="workflow-studio" className="py-16 bg-white border-t border-slate-200/80 font-sans relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center text-left">
           
           {/* LEFT COLUMN: Section Header & Compact Feature Checklist */}
-          <div className="lg:col-span-5 space-y-4">
-            <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-red-50 text-[#D83025] text-[10px] font-bold uppercase tracking-wider border border-red-100 shadow-xs">
-              <span>WORKFLOW STUDIO</span>
-            </div>
+          <div className="lg:col-span-5 space-y-3">
+            <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+              Workflow Studio
+            </p>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 font-['Outfit'] tracking-tight leading-tight">
               Ready for any <span className="text-[#D83025]">automation</span>
