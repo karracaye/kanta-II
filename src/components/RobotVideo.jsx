@@ -37,12 +37,15 @@ export default function RobotVideo() {
         }`}
         style={{ pointerEvents: 'none' }}
       >
-        <div className="bg-white rounded-2xl px-5 py-4 shadow-lg border border-slate-200/90 text-left min-w-[220px] max-w-[280px] relative">
+        <div className="bg-white rounded-2xl px-5 py-4 shadow-xl shadow-red-500/10 border border-red-200/80 text-left min-w-[220px] max-w-[280px] relative overflow-hidden">
+          {/* Top Kanta accent bar */}
+          <div className="absolute top-0 left-0 right-0 h-1 bg-[#B92025]" />
+
           {/* Bubble pointer tail pointing down toward robot */}
           <div className="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-t-[12px] border-t-white drop-shadow-xs"></div>
 
           {/* Title */}
-          <div className="flex items-center gap-2 mb-1.5">
+          <div className="flex items-center gap-2 mb-1.5 pt-1">
             <img
               src="/assets/logo/Iconic-Color@2x.png"
               alt="Kanta Icon"

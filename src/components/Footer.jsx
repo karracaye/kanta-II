@@ -4,10 +4,11 @@ import { Mail, Linkedin, ArrowUpRight } from 'lucide-react';
 
 export default function Footer({ onBookDemo }) {
   return (
-    <footer className="bg-gradient-to-br from-[#800A0A] via-[#5C0606] to-[#2B0303] text-white pt-12 sm:pt-16 pb-10 sm:pb-12 border-t border-red-900/60 font-sans relative overflow-hidden text-center md:text-left">
+    <footer className="bg-gradient-to-br from-[#800A0A] via-[#4A0808] to-[#1F0303] text-white pt-12 sm:pt-16 pb-10 sm:pb-12 border-t border-red-950/60 font-sans relative overflow-hidden text-center md:text-left">
       
-      {/* Subtle decorative grid overlay */}
+      {/* Subtle decorative grid overlay and ambient warm Kanta red flare */}
       <div className="absolute inset-0 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none"></div>
+      <div className="absolute -top-32 right-1/4 w-[600px] h-[600px] bg-[radial-gradient(ellipse_at_center,_rgba(185,32,37,0.22)_0%,_transparent_70%)] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -31,7 +32,7 @@ export default function Footer({ onBookDemo }) {
                 href="mailto:hello@kanta.ai"
                 className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
               >
-                <Mail size={14} className="text-amber-300" />
+                <Mail size={14} className="text-[#FFB03C]" />
                 <span>hello@kanta.ai</span>
               </a>
               <span>•</span>
@@ -41,7 +42,7 @@ export default function Footer({ onBookDemo }) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
               >
-                <Linkedin size={14} className="text-amber-300" />
+                <Linkedin size={14} className="text-[#FFB03C]" />
                 <span>LinkedIn</span>
               </a>
             </div>
@@ -49,7 +50,7 @@ export default function Footer({ onBookDemo }) {
 
           {/* Links Column 1: Platform */}
           <div className="md:col-span-2 space-y-3 text-xs flex flex-col items-center md:items-start text-center md:text-left">
-            <h4 className="font-extrabold text-amber-300 font-['Outfit'] uppercase tracking-wider text-xs">
+            <h4 className="font-extrabold text-[#FFB03C] font-['Outfit'] uppercase tracking-wider text-xs">
               Platform
             </h4>
             <ul className="space-y-2 text-red-100/90 font-medium">
@@ -64,7 +65,7 @@ export default function Footer({ onBookDemo }) {
 
           {/* Links Column 2: Solutions */}
           <div className="md:col-span-3 space-y-3 text-xs flex flex-col items-center md:items-start text-center md:text-left">
-            <h4 className="font-extrabold text-amber-300 font-['Outfit'] uppercase tracking-wider text-xs">
+            <h4 className="font-extrabold text-[#FFB03C] font-['Outfit'] uppercase tracking-wider text-xs">
               Solutions & Trust
             </h4>
             <ul className="space-y-2 text-red-100/90 font-medium">
@@ -93,14 +94,14 @@ export default function Footer({ onBookDemo }) {
 
           {/* Links Column 3: Access */}
           <div className="md:col-span-2 space-y-3 text-xs flex flex-col items-center md:items-start text-center md:text-left">
-            <h4 className="font-extrabold text-amber-300 font-['Outfit'] uppercase tracking-wider text-xs">
+            <h4 className="font-extrabold text-[#FFB03C] font-['Outfit'] uppercase tracking-wider text-xs">
               Access
             </h4>
             <ul className="space-y-2.5 text-red-100/90 font-medium">
               <li>
                 <Link
                   to="/demo"
-                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white text-[#D83025] hover:bg-orange-50 font-bold transition-all shadow-sm"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#B92025] text-white hover:opacity-95 font-bold transition-all shadow-md shadow-red-500/25"
                 >
                   <span>Book a demo</span>
                   <ArrowUpRight size={13} />

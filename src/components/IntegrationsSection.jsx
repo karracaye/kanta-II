@@ -44,12 +44,12 @@ export default function IntegrationsSection({ onBookDemo }) {
         
         {/* Header Tag & Title */}
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-2">
-          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#B92025] uppercase font-['Outfit']">
             Integrations & Stack
           </p>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 font-['Outfit'] tracking-tight">
-            Works with your <span className="text-[#D83025]">stack</span>
+            Works with your <span className="text-[#B92025]">stack</span>
           </h2>
 
           <p className="text-slate-600 text-sm sm:text-base font-medium leading-relaxed">
@@ -67,7 +67,7 @@ export default function IntegrationsSection({ onBookDemo }) {
                 className="bg-white rounded-3xl p-7 border border-slate-200/90 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1"
               >
                 <div className="space-y-4">
-                  <div className="w-11 h-11 rounded-full bg-slate-100 text-slate-800 flex items-center justify-center border border-slate-200 group-hover:bg-[#D83025] group-hover:text-white transition-colors">
+                  <div className="w-11 h-11 rounded-full bg-slate-100 text-slate-800 flex items-center justify-center border border-slate-200 group-hover:bg-[#B92025] group-hover:text-white transition-colors">
                     <IconComponent size={20} />
                   </div>
 
@@ -87,7 +87,7 @@ export default function IntegrationsSection({ onBookDemo }) {
                   <div className="pt-3 border-t border-slate-100 space-y-2">
                     {card.features.map((feat, fIdx) => (
                       <div key={fIdx} className="flex items-start gap-2 text-xs text-slate-700 font-medium">
-                        <CheckCircle2 size={14} className="text-[#D83025] shrink-0 mt-0.5" />
+                        <CheckCircle2 size={14} className="text-[#B92025] shrink-0 mt-0.5" />
                         <span>{feat}</span>
                       </div>
                     ))}

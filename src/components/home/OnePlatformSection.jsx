@@ -59,12 +59,12 @@ export default function OnePlatformSection() {
         
         {/* Header per brief */}
         <div className="max-w-3xl mx-auto text-center mb-14 space-y-2">
-          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#B92025] uppercase font-['Outfit']">
             One platform
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight font-['Outfit']">
             One platform. <br />
-            <span className="text-[#D83025]">One set of rules.</span>
+            <span className="text-[#B92025]">One set of rules.</span>
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-slate-500 font-medium leading-relaxed pt-1 font-['Plus_Jakarta_Sans']">
             Workflows, app screens, data and AI agents live in one place, so one permission model and one record cover all of them. No gaps between a workflow tool, an app designer and a database for rules or logs to fall through.
@@ -83,13 +83,13 @@ export default function OnePlatformSection() {
                 onClick={() => setActiveTab(item.id)}
                 className={`p-6 rounded-3xl border text-left transition-all duration-300 cursor-pointer ${
                   isSelected
-                    ? 'bg-white border-[#D83025] shadow-lg ring-2 ring-red-500/20 translate-y-[-2px]'
-                    : 'kanta-glass-card hover:border-[#D83025]/50 hover:shadow-md'
+                    ? 'bg-white border-[#B92025] shadow-lg ring-2 ring-red-500/20 translate-y-[-2px]'
+                    : 'kanta-glass-card hover:border-red-200 hover:shadow-md'
                 }`}
               >
                 <div
                   className={`w-11 h-11 rounded-2xl flex items-center justify-center mb-4 transition-colors ${
-                    isSelected ? 'bg-[#D83025] text-white shadow-xs' : 'bg-red-50 text-[#D83025]'
+                    isSelected ? 'bg-[#B92025] text-white shadow-xs' : 'bg-red-50 text-[#B92025]'
                   }`}
                 >
                   <IconComp size={20} />
@@ -109,7 +109,7 @@ export default function OnePlatformSection() {
         <div className="kanta-glass-card rounded-3xl p-6 sm:p-8 shadow-md border border-slate-200/90">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-100">
             <div>
-              <span className="text-xs font-bold text-[#D83025] uppercase tracking-wider">
+              <span className="text-xs font-bold text-[#B92025] uppercase tracking-wider">
                 Architecture Detail
               </span>
               <h4 className="text-lg font-bold text-slate-900 font-['Outfit']">
@@ -124,7 +124,7 @@ export default function OnePlatformSection() {
           <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
             {currentPillar.details.map((detail, idx) => (
               <div key={idx} className="flex items-start gap-3 p-4 rounded-2xl bg-white/80 border border-slate-200/80 shadow-2xs">
-                <div className="w-5 h-5 rounded-full bg-[#D83025] text-white flex items-center justify-center shrink-0 mt-0.5">
+                <div className="w-5 h-5 rounded-full bg-[#B92025] text-white flex items-center justify-center shrink-0 mt-0.5">
                   <Check size={12} />
                 </div>
                 <span className="text-xs font-semibold text-slate-700 leading-snug font-['Plus_Jakarta_Sans']">

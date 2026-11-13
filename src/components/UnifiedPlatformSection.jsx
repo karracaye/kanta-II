@@ -47,13 +47,13 @@ export default function UnifiedPlatformSection({ onBookDemo }) {
         
         {/* Header Tag & Title */}
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-2">
-          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#B92025] uppercase font-['Outfit']">
             Unified Stack
           </p>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 font-['Outfit'] tracking-tight">
             Build AI Applications <br />
-            <span className="text-[#D83025]">On One Platform</span>
+            <span className="text-[#B92025]">On One Platform</span>
           </h2>
 
           <p className="text-slate-600 text-sm sm:text-base font-medium leading-relaxed">
@@ -72,11 +72,11 @@ export default function UnifiedPlatformSection({ onBookDemo }) {
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <div className="w-11 h-11 rounded-full bg-slate-100 text-slate-800 flex items-center justify-center border border-slate-200 group-hover:bg-[#D83025] group-hover:text-white transition-colors shadow-2xs">
+                    <div className="w-11 h-11 rounded-full bg-slate-100 text-slate-800 flex items-center justify-center border border-slate-200 group-hover:bg-[#B92025] group-hover:text-white transition-colors shadow-2xs">
                       <IconComponent size={20} />
                     </div>
                     <div className="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center group-hover:border-red-200">
-                      <ArrowUpRight size={16} className="text-slate-400 group-hover:text-[#D83025] transition-colors" />
+                      <ArrowUpRight size={16} className="text-slate-400 group-hover:text-[#B92025] transition-colors" />
                     </div>
                   </div>
 
@@ -97,7 +97,7 @@ export default function UnifiedPlatformSection({ onBookDemo }) {
                   <div className="pt-4 border-t border-slate-100 space-y-3">
                     {card.features.map((feat, fIdx) => (
                       <div key={fIdx} className="flex items-start gap-2.5 text-xs">
-                        <CheckCircle2 size={15} className="text-[#D83025] shrink-0 mt-0.5" />
+                        <CheckCircle2 size={15} className="text-[#B92025] shrink-0 mt-0.5" />
                         <div>
                           <strong className="block text-slate-900 font-bold">{feat.name}</strong>
                           <span className="text-[10px] text-slate-500 font-medium">{feat.sub}</span>
@@ -123,7 +123,7 @@ export default function UnifiedPlatformSection({ onBookDemo }) {
 
           <button
             onClick={onBookDemo}
-            className="px-6 py-2.5 rounded-full bg-[#D83025] hover:bg-[#C0261D] text-white font-bold text-xs transition-colors shrink-0 flex items-center gap-1.5 cursor-pointer shadow-xs active:scale-95"
+            className="px-6 py-2.5 rounded-full bg-[#B92025] hover:bg-[#9E1B1F] text-white font-bold text-xs transition-colors shrink-0 flex items-center gap-1.5 cursor-pointer shadow-xs active:scale-95"
           >
             <span>See how it connects</span>
             <ArrowUpRight size={14} />

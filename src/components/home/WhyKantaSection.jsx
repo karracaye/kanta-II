@@ -31,12 +31,12 @@ export default function WhyKantaSection() {
         
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-14 space-y-2">
-          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#B92025] uppercase font-['Outfit']">
             Why Kanta
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight font-['Outfit']">
             Born AI-native. <br />
-            <span className="text-[#D83025]">Made for regulated work.</span>
+            <span className="text-[#B92025]">Made for regulated work.</span>
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-slate-500 font-medium leading-relaxed pt-1 font-['Plus_Jakarta_Sans']">
             Most workflow platforms were designed before generative AI and are adding it now. Kanta was designed around it from day one, together with the controls regulated organisations need.
@@ -50,9 +50,9 @@ export default function WhyKantaSection() {
             return (
               <div
                 key={idx}
-                className="kanta-glass-card kanta-glass-card-hover rounded-3xl p-6 sm:p-7 relative"
+                className="kanta-glass-card kanta-glass-card-hover rounded-3xl p-6 sm:p-7 relative hover:border-red-200"
               >
-                <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#D83025] border border-red-100 flex items-center justify-center mb-4 shadow-2xs">
+                <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#B92025] border border-red-100 flex items-center justify-center mb-4 shadow-2xs">
                   <IconComp size={22} />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900 mb-2 font-['Outfit']">
@@ -70,7 +70,7 @@ export default function WhyKantaSection() {
         <div className="kanta-glass-card rounded-3xl p-6 sm:p-8 overflow-hidden shadow-lg border border-slate-200/90">
           <div className="flex flex-wrap items-center justify-between gap-3 pb-5 mb-6 border-b border-slate-100">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-[#D83025]">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#B92025]">
                 Interactive Canvas Preview
               </span>
               <h4 className="text-base sm:text-lg font-bold text-slate-900 font-['Outfit']">
@@ -96,11 +96,11 @@ export default function WhyKantaSection() {
             </div>
 
             {/* Node 2: AI Step */}
-            <div className="p-4 rounded-2xl border-2 border-[#D83025] bg-red-50/40 text-left space-y-1 relative shadow-sm">
-              <div className="absolute -top-2.5 right-3 bg-[#D83025] text-white text-[9px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
+            <div className="p-4 rounded-2xl border-2 border-[#B92025] bg-red-50/50 text-left space-y-1 relative shadow-sm">
+              <div className="absolute -top-2.5 right-3 bg-[#B92025] text-white text-[9px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow-xs">
                 AI Native Step
               </div>
-              <div className="text-[10px] uppercase font-bold text-[#D83025]">Step 2 · Extraction</div>
+              <div className="text-[10px] uppercase font-bold text-[#B92025]">Step 2 · Extraction</div>
               <div className="text-sm font-bold text-slate-900 font-['Outfit']">Extract Invoice Metadata</div>
               <div className="text-xs text-slate-500 font-medium">Model: Claude 3.5 Sonnet (AWS)</div>
             </div>

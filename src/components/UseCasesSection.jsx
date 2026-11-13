@@ -57,12 +57,12 @@ export default function UseCasesSection({ onBookDemo }) {
         
         {/* Header Tag & Title */}
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-2">
-          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#B92025] uppercase font-['Outfit']">
             Enterprise Use Cases
           </p>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 font-['Outfit'] tracking-tight">
-            Built for real <span className="text-[#D83025]">workflows</span>
+            Built for real <span className="text-[#B92025]">workflows</span>
           </h2>
 
           <p className="text-slate-600 text-sm sm:text-base font-medium leading-relaxed">
@@ -75,14 +75,14 @@ export default function UseCasesSection({ onBookDemo }) {
           {useCases.map((item, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-3xl p-7 border border-slate-200/90 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group text-left hover:-translate-y-1 hover:border-[#D83025]"
+              className="bg-white rounded-3xl p-7 border border-slate-200/90 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group text-left hover:-translate-y-1 hover:border-[#B92025]"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <span className="text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full border bg-slate-100 text-slate-700 border-slate-200">
                     {item.category}
                   </span>
-                  <ArrowUpRight size={16} className="text-slate-400 group-hover:text-[#D83025] transition-colors" />
+                  <ArrowUpRight size={16} className="text-slate-400 group-hover:text-[#B92025] transition-colors" />
                 </div>
 
                 <h3 className="text-xl font-extrabold text-slate-900 font-['Outfit']">
@@ -101,7 +101,7 @@ export default function UseCasesSection({ onBookDemo }) {
                       const TagIcon = tagObj.icon;
                       return (
                         <span key={tIdx} className="inline-flex items-center gap-1 text-[10px] font-semibold bg-slate-50 text-slate-700 px-3 py-1 rounded-full border border-slate-200">
-                          <TagIcon size={10} className="text-[#D83025]" />
+                          <TagIcon size={10} className="text-[#B92025]" />
                           <span>{tagObj.label}</span>
                         </span>
                       );
@@ -113,7 +113,7 @@ export default function UseCasesSection({ onBookDemo }) {
                 <div className="grid grid-cols-2 gap-3 pt-2">
                   {item.metrics.map((m, mIdx) => (
                     <div key={mIdx} className="bg-slate-50 p-3 rounded-2xl border border-slate-100">
-                      <strong className="text-base font-extrabold block text-[#D83025]">{m.val}</strong>
+                      <strong className="text-base font-extrabold block text-[#B92025]">{m.val}</strong>
                       <span className="text-[10px] text-slate-500 font-medium">{m.label}</span>
                     </div>
                   ))}

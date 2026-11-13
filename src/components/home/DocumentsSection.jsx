@@ -31,12 +31,12 @@ export default function DocumentsSection() {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-14 space-y-2">
-          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#B92025] uppercase font-['Outfit']">
             Documents
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight font-['Outfit']">
             Documents in. <br />
-            <span className="text-[#D83025]">Structured data out.</span>
+            <span className="text-[#B92025]">Structured data out.</span>
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-slate-500 font-medium leading-relaxed pt-1 font-['Plus_Jakarta_Sans']">
             Kanta reads invoices, claims, identity documents and certificates with its own document models, and returns each field with a confidence score and its position on the page.
@@ -50,9 +50,9 @@ export default function DocumentsSection() {
             return (
               <div
                 key={idx}
-                className="kanta-glass-card kanta-glass-card-hover rounded-3xl p-6 relative"
+                className="kanta-glass-card kanta-glass-card-hover rounded-3xl p-6 relative hover:border-red-300"
               >
-                <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#D83025] border border-red-100 flex items-center justify-center mb-4 shadow-2xs">
+                <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#B92025] border border-red-100 flex items-center justify-center mb-4 shadow-2xs">
                   <IconComp size={22} />
                 </div>
                 <h3 className="text-base font-bold text-slate-900 mb-2 font-['Outfit']">
@@ -70,7 +70,7 @@ export default function DocumentsSection() {
         <div className="kanta-glass-card rounded-3xl shadow-xl p-6 sm:p-8 border border-slate-200/90">
           <div className="flex flex-wrap items-center justify-between gap-3 pb-4 mb-6 border-b border-slate-100">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-[#D83025]">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#B92025]">
                 Extraction Inspector
               </span>
               <h4 className="text-base sm:text-lg font-bold text-slate-900 font-['Outfit']">
@@ -91,8 +91,8 @@ export default function DocumentsSection() {
                   <div className="font-extrabold text-sm text-slate-900 font-['Outfit']">ACME PACIFIC LOGISTICS PTE LTD</div>
                   <div className="text-[11px] text-slate-500">UEN: 201934892K · 12 Marina Blvd, Singapore</div>
                 </div>
-                <div className="relative border-2 border-dashed border-[#D83025] p-1.5 rounded-lg bg-red-50/60">
-                  <span className="text-[9px] font-bold text-[#D83025] block">#invoice_num [99.8%]</span>
+                <div className="relative border-2 border-dashed border-[#B92025] p-1.5 rounded-lg bg-red-50/80">
+                  <span className="text-[9px] font-bold text-[#B92025] block">#invoice_num [99.8%]</span>
                   <span className="font-mono font-bold text-xs">INV-2026-0891</span>
                 </div>
               </div>
@@ -102,8 +102,8 @@ export default function DocumentsSection() {
                   <span className="text-[10px] text-slate-400 font-medium block">Billed To:</span>
                   <div className="font-bold text-slate-800">Apex Global Holdings</div>
                 </div>
-                <div className="relative border-2 border-dashed border-[#D83025] p-1.5 rounded-lg bg-red-50/60">
-                  <span className="text-[9px] font-bold text-[#D83025] block">#invoice_date [99.5%]</span>
+                <div className="relative border-2 border-dashed border-[#B92025] p-1.5 rounded-lg bg-red-50/80">
+                  <span className="text-[9px] font-bold text-[#B92025] block">#invoice_date [99.5%]</span>
                   <div className="font-mono font-bold">14 Oct 2026</div>
                 </div>
               </div>
@@ -126,8 +126,8 @@ export default function DocumentsSection() {
 
               {/* Total Box */}
               <div className="flex justify-end pt-1">
-                <div className="relative border-2 border-dashed border-[#D83025] p-2.5 rounded-xl bg-red-50/70 text-right min-w-[170px]">
-                  <span className="text-[9px] font-bold text-[#D83025] block">#total_amount [99.9%]</span>
+                <div className="relative border-2 border-dashed border-[#B92025] p-2.5 rounded-xl bg-red-50/80 text-right min-w-[170px]">
+                  <span className="text-[9px] font-bold text-[#B92025] block">#total_amount [99.9%]</span>
                   <span className="text-base font-bold font-mono text-slate-900">S$ 5,450.00</span>
                 </div>
               </div>

@@ -21,15 +21,15 @@ export default function HeroSection({ onBookDemo }) {
         {/* --- TOP TYPOGRAPHY SECTION --- */}
         <div className="max-w-4xl mx-auto space-y-4 mb-8">
           
-          {/* Simple, modern, minimalist text label per user request */}
-          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+          {/* Simple, modern, minimalist text label in official Kanta red */}
+          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#B92025] uppercase font-['Outfit']">
             AI-native workflow platform for regulated organisations
           </p>
 
-          {/* Headline per brief */}
+          {/* Headline with official Kanta logo Red */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.15] font-['Outfit']">
             AI that plays by your rules. <br />
-            <span className="text-[#D83025]">Governance built in.</span>
+            <span className="text-[#B92025]">Governance built in.</span>
           </h1>
 
           {/* Subhead per brief */}
@@ -41,7 +41,7 @@ export default function HeroSection({ onBookDemo }) {
           <div className="flex flex-wrap items-center justify-center gap-3.5 pt-2">
             <Link
               to="/demo"
-              className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-[#D83025] hover:bg-[#C0261D] text-white font-bold text-xs sm:text-sm transition-all duration-300 shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
+              className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-[#B92025] hover:opacity-90 text-white font-bold text-xs sm:text-sm transition-all duration-300 shadow-md shadow-red-900/15 hover:shadow-lg active:scale-95 cursor-pointer"
             >
               <span>Book a demo</span>
               <ArrowRight size={16} />
@@ -50,7 +50,7 @@ export default function HeroSection({ onBookDemo }) {
             <a
               href="#how-it-works"
               onClick={handleScrollToHowItWorks}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-slate-200 bg-white text-slate-800 hover:border-[#D83025] hover:text-[#D83025] hover:bg-orange-50/50 font-bold text-xs sm:text-sm transition-colors shadow-2xs"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-slate-200 bg-white text-slate-800 hover:border-[#B92025] hover:text-[#B92025] hover:bg-red-50/50 font-bold text-xs sm:text-sm transition-colors shadow-2xs"
             >
               <span>See how it works</span>
               <ArrowUpRight size={16} />
@@ -84,7 +84,7 @@ export default function HeroSection({ onBookDemo }) {
           <div className="lg:col-span-4 flex flex-col items-center lg:items-start space-y-4">
             <div className="w-full max-w-[300px] bg-white/90 backdrop-blur-md rounded-2xl p-4 border border-slate-200 shadow-sm text-left font-sans space-y-2.5">
               <div className="flex items-center gap-2 pb-2 border-b border-slate-100">
-                <div className="w-6 h-6 rounded-md bg-red-50 text-[#D83025] flex items-center justify-center">
+                <div className="w-6 h-6 rounded-md bg-red-50 text-[#B92025] border border-red-100 flex items-center justify-center">
                   <Lock size={13} />
                 </div>
                 <h3 className="font-bold text-xs text-slate-900 font-['Outfit']">
@@ -93,15 +93,15 @@ export default function HeroSection({ onBookDemo }) {
               </div>
               <ul className="space-y-1.5 text-xs text-slate-600 font-medium">
                 <li className="flex items-start gap-1.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#D83025] mt-1.5 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#B92025] mt-1.5 shrink-0" />
                   <span>Thresholds checked on server (S$5,000)</span>
                 </li>
                 <li className="flex items-start gap-1.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#D83025] mt-1.5 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#B92025] mt-1.5 shrink-0" />
                   <span>Enforced in data, not browser</span>
                 </li>
                 <li className="flex items-start gap-1.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#D83025] mt-1.5 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#B92025] mt-1.5 shrink-0" />
                   <span>Owner sign-off before deploy</span>
                 </li>
               </ul>

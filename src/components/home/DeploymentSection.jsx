@@ -37,12 +37,12 @@ export default function DeploymentSection() {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-14 space-y-2">
-          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#B92025] uppercase font-['Outfit']">
             Deployment & Privacy
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight font-['Outfit']">
             Your data stays <br />
-            <span className="text-[#D83025]">where you need it.</span>
+            <span className="text-[#B92025]">where you need it.</span>
           </h2>
         </div>
 
@@ -53,9 +53,9 @@ export default function DeploymentSection() {
             return (
               <div
                 key={idx}
-                className="kanta-glass-card kanta-glass-card-hover rounded-3xl p-6 relative"
+                className="kanta-glass-card kanta-glass-card-hover rounded-3xl p-6 relative hover:border-red-300"
               >
-                <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#D83025] border border-red-100 flex items-center justify-center mb-4 shadow-2xs">
+                <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#B92025] border border-red-100 flex items-center justify-center mb-4 shadow-2xs">
                   <IconComp size={22} />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900 mb-2 font-['Outfit']">
@@ -73,7 +73,7 @@ export default function DeploymentSection() {
         <div className="text-center pt-2">
           <Link
             to="/security"
-            className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-white border border-slate-200 text-slate-800 hover:border-[#D83025] hover:text-[#D83025] font-bold text-xs sm:text-sm transition-all shadow-sm hover:shadow-md cursor-pointer"
+            className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-white border border-slate-200 text-slate-800 hover:border-[#B92025] hover:text-[#B92025] hover:bg-red-50/40 font-bold text-xs sm:text-sm transition-all shadow-sm hover:shadow-md cursor-pointer"
           >
             <span>More on the Security page</span>
             <ArrowRight size={16} />

@@ -98,7 +98,7 @@ export default function AIChatWidget() {
           <div key={msg.id} className="space-y-1">
             {msg.sender === 'user' ? (
               <div className="flex justify-end">
-                <div className="bg-[#D83025] text-white font-medium px-3.5 py-2 rounded-2xl rounded-tr-xs max-w-[85%] shadow-sm">
+                <div className="bg-[#B92025] text-white font-medium px-3.5 py-2 rounded-2xl rounded-tr-xs max-w-[85%] shadow-sm">
                   {msg.text}
                 </div>
               </div>
@@ -125,7 +125,7 @@ export default function AIChatWidget() {
                   </div>
                 ) : (
                   <div className="bg-white border border-slate-200/90 text-slate-800 font-medium px-3.5 py-2.5 rounded-2xl rounded-tl-xs max-w-[90%] shadow-sm flex items-start gap-2 text-left">
-                    <Sparkles size={14} className="text-[#D83025] shrink-0 mt-0.5" />
+                    <Sparkles size={14} className="text-[#B92025] shrink-0 mt-0.5" />
                     <span>{msg.text}</span>
                   </div>
                 )}
@@ -137,7 +137,7 @@ export default function AIChatWidget() {
         {/* Live typing status indicator */}
         {isTyping && (
           <div className="flex items-center gap-2 text-[10px] text-slate-400 italic py-1 animate-pulse">
-            <span className="w-2 h-2 rounded-full bg-[#D83025] animate-ping"></span>
+            <span className="w-2 h-2 rounded-full bg-[#B92025] animate-ping"></span>
             <span>AI is generating a response...</span>
           </div>
         )}
@@ -150,12 +150,12 @@ export default function AIChatWidget() {
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
           placeholder="Ask about your orders, invoices, analytics..."
-          className="flex-1 bg-slate-100 hover:bg-slate-100/80 focus:bg-white text-xs px-3.5 py-2 rounded-full border border-transparent focus:border-[#D83025] outline-none text-slate-800 placeholder-slate-400 transition-all"
+          className="flex-1 bg-slate-100 hover:bg-slate-100/80 focus:bg-white text-xs px-3.5 py-2 rounded-full border border-transparent focus:border-[#B92025] focus:ring-1 focus:ring-red-500/20 outline-none text-slate-800 placeholder-slate-400 transition-all"
         />
         <button
           type="submit"
           disabled={!inputText.trim()}
-          className="w-8 h-8 rounded-full bg-[#D83025] hover:bg-[#C0261D] disabled:opacity-40 text-white flex items-center justify-center transition-all duration-200 shadow-md shrink-0 active:scale-90 cursor-pointer"
+          className="w-8 h-8 rounded-full bg-[#B92025] hover:bg-[#9B191D] disabled:opacity-40 text-white flex items-center justify-center transition-all duration-200 shadow-md shadow-red-900/15 shrink-0 active:scale-90 cursor-pointer"
         >
           <Send size={13} className="transform translate-x-[0.5px]" />
         </button>

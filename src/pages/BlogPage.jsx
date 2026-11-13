@@ -14,7 +14,7 @@ export default function BlogPage() {
         
         {/* Header per brief */}
         <div className="max-w-2xl space-y-2">
-          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#B92025] uppercase font-['Outfit']">
             Blog
           </p>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-['Outfit']">
@@ -30,13 +30,13 @@ export default function BlogPage() {
           <article className="kanta-glass-card kanta-glass-card-hover rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 group">
             <div className="space-y-3 max-w-2xl">
               <div className="flex items-center gap-2 text-xs font-semibold text-slate-400">
-                <Calendar size={14} className="text-[#D83025]" />
+                <Calendar size={14} className="text-[#B92025]" />
                 <span>October 2026</span>
                 <span>•</span>
-                <span className="text-[#D83025] uppercase font-bold text-[11px]">Case Study</span>
+                <span className="text-[#B92025] uppercase font-bold text-[11px]">Case Study</span>
               </div>
               
-              <h2 className="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-[#D83025] transition-colors leading-snug font-['Outfit']">
+              <h2 className="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-[#B92025] transition-colors leading-snug font-['Outfit']">
                 We asked AI to build a claims app. It stopped and asked for permission.
               </h2>
               
@@ -48,7 +48,7 @@ export default function BlogPage() {
             <div className="shrink-0">
               <Link
                 to="/blog/ai-built-claims-app"
-                className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-[#D83025] hover:bg-[#C0261D] text-white text-xs sm:text-sm font-bold transition-all shadow-md group-hover:shadow-lg active:scale-95 cursor-pointer"
+                className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-[#B92025] hover:opacity-90 text-white text-xs sm:text-sm font-bold transition-all shadow-md group-hover:shadow-lg active:scale-95 cursor-pointer"
               >
                 <span>Read post</span>
                 <ArrowRight size={15} />

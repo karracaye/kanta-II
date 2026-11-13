@@ -37,12 +37,12 @@ export default function InvoiceApprovalPage() {
         
         {/* Header */}
         <div className="max-w-3xl space-y-3">
-          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#B92025] uppercase font-['Outfit']">
             Solution · Finance Operations
           </p>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight font-['Outfit']">
             From inbox to approval, <br />
-            <span className="text-[#D83025]">without retyping.</span>
+            <span className="text-[#B92025]">without retyping.</span>
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-slate-500 font-medium leading-relaxed font-['Plus_Jakarta_Sans']">
             Kanta reads each invoice, checks it against your rules, and routes it to the right approver.
@@ -50,8 +50,8 @@ export default function InvoiceApprovalPage() {
         </div>
 
         {/* The Problem Box */}
-        <div className="bg-gradient-to-r from-red-50/70 via-orange-50/40 to-white rounded-3xl p-6 sm:p-8 border border-red-100 space-y-2.5 shadow-xs">
-          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#D83025]">
+        <div className="bg-gradient-to-r from-red-50/80 via-red-50/40 to-white rounded-3xl p-6 sm:p-8 border border-red-200/80 space-y-2.5 shadow-xs">
+          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#B92025]">
             <AlertTriangle size={16} />
             <span>The problem</span>
           </div>
@@ -64,7 +64,7 @@ export default function InvoiceApprovalPage() {
         <div className="kanta-glass-card rounded-3xl shadow-xl p-6 sm:p-8 space-y-6 border border-slate-200/90">
           <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-100">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-[#D83025]">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#B92025]">
                 Live Accounts Payable Pipeline
               </span>
               <h3 className="text-xl font-bold text-slate-900 font-['Outfit']">
@@ -91,8 +91,8 @@ export default function InvoiceApprovalPage() {
             </div>
 
             {/* Step 2 */}
-            <div className="p-5 rounded-2xl bg-red-50/40 border-2 border-[#D83025] space-y-2 shadow-xs">
-              <span className="text-[10px] font-bold uppercase text-[#D83025] block font-mono">
+            <div className="p-5 rounded-2xl bg-red-50/50 border-2 border-[#B92025] space-y-2 shadow-xs">
+              <span className="text-[10px] font-bold uppercase text-[#B92025] block font-mono">
                 2. Server-Side Rule Match
               </span>
               <div className="font-bold text-sm text-slate-900 font-['Outfit']">Threshold Check: &gt; S$5,000</div>
@@ -120,7 +120,7 @@ export default function InvoiceApprovalPage() {
         {/* How Kanta Handles It */}
         <div className="space-y-8">
           <div className="max-w-2xl space-y-2">
-            <div className="text-xs font-bold uppercase tracking-wider text-[#D83025]">
+            <div className="text-xs font-bold uppercase tracking-wider text-[#B92025]">
               The solution
             </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-['Outfit']">
@@ -134,7 +134,7 @@ export default function InvoiceApprovalPage() {
                 key={idx}
                 className="kanta-glass-card kanta-glass-card-hover p-6 rounded-3xl space-y-2"
               >
-                <div className="w-9 h-9 rounded-xl bg-red-50 text-[#D83025] flex items-center justify-center font-bold text-xs mb-3 shadow-2xs font-['Outfit']">
+                <div className="w-9 h-9 rounded-xl bg-red-50 text-[#B92025] flex items-center justify-center font-bold text-xs mb-3 shadow-2xs font-['Outfit']">
                   0{idx + 1}
                 </div>
                 <h3 className="font-bold text-base text-slate-900 font-['Outfit']">
@@ -151,7 +151,7 @@ export default function InvoiceApprovalPage() {
         {/* What an auditor gets & Proof */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="kanta-glass-card p-6 sm:p-8 rounded-3xl shadow-sm space-y-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#D83025]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#B92025]">
               Compliance
             </span>
             <h3 className="text-xl font-bold text-slate-900 font-['Outfit']">
@@ -163,7 +163,7 @@ export default function InvoiceApprovalPage() {
           </div>
 
           <div className="kanta-glass-card p-6 sm:p-8 rounded-3xl shadow-sm space-y-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#D83025]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#B92025]">
               Track Record
             </span>
             <h3 className="text-xl font-bold text-slate-900 font-['Outfit']">
@@ -176,7 +176,7 @@ export default function InvoiceApprovalPage() {
         </div>
 
         {/* Call to Action Box */}
-        <div className="bg-gradient-to-br from-red-50/60 via-white to-orange-50/40 border-2 border-red-100 rounded-3xl p-8 sm:p-12 text-center space-y-5 shadow-lg">
+        <div className="bg-gradient-to-br from-red-50/60 via-white to-red-50/30 border-2 border-red-100 rounded-3xl p-8 sm:p-12 text-center space-y-5 shadow-lg">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-['Outfit']">
             Call to action
           </h2>
@@ -186,7 +186,7 @@ export default function InvoiceApprovalPage() {
           <div className="pt-2">
             <Link
               to="/demo"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#D83025] hover:bg-[#C0261D] text-white font-bold text-sm sm:text-base transition-all shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#B92025] hover:opacity-90 text-white font-bold text-sm sm:text-base transition-all shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
             >
               <span>Book a demo</span>
               <ArrowRight size={18} />

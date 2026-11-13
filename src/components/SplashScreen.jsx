@@ -89,8 +89,8 @@ export default function SplashScreen({ onFinish }) {
                 alt="Kanta 2D Robot"
                 className="w-10 h-10 object-contain shrink-0 mt-1 drop-shadow-md rounded-full animate-pulse"
               />
-              <div className="bg-red-50 border border-red-100 text-[#D83025] p-4 rounded-3xl rounded-tl-xs shadow-md font-bold text-xs sm:text-sm flex items-center gap-2 flex-1">
-                <CheckCircle2 size={16} className="text-[#D83025] shrink-0" />
+              <div className="bg-red-50 border border-red-100 text-[#B92025] p-4 rounded-3xl rounded-tl-xs shadow-md font-bold text-xs sm:text-sm flex items-center gap-2 flex-1">
+                <CheckCircle2 size={16} className="text-[#B92025] shrink-0" />
                 <span>Platform online & ready! Welcome to Kanta.</span>
               </div>
             </div>
@@ -101,7 +101,7 @@ export default function SplashScreen({ onFinish }) {
         {/* Progress Loading Bar */}
         <div className="w-48 bg-slate-100 rounded-full h-1.5 overflow-hidden border border-slate-200 shadow-inner mt-2">
           <div
-            className="h-full bg-gradient-to-r from-[#D83025] via-[#FF5722] to-amber-400 transition-all duration-100 rounded-full"
+            className="h-full bg-[#B92025] transition-all duration-100 rounded-full"
             style={{ width: `${progress}%` }}
           ></div>
         </div>

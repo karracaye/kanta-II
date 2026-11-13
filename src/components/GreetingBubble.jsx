@@ -53,7 +53,7 @@ export default function GreetingBubble() {
             onClick={toggleAudioGreeting}
             className={`p-1.5 rounded-full transition-colors flex items-center gap-1 text-xs font-semibold ${
               isPlayingAudio
-                ? 'bg-red-50 text-[#D83025] border border-red-200'
+                ? 'bg-red-50 text-[#B92025] border border-red-200'
                 : 'text-slate-400 hover:text-slate-600 bg-slate-100'
             }`}
             title="Listen to AI Voice Greeting"
@@ -69,7 +69,7 @@ export default function GreetingBubble() {
 
         {/* Processing State */}
         {isProcessing && (
-          <div className="flex items-center gap-2 text-xs text-[#D83025] font-semibold mb-3 bg-red-50 px-2.5 py-1.5 rounded-lg border border-red-100 animate-pulse">
+          <div className="flex items-center gap-2 text-xs text-[#B92025] font-semibold mb-3 bg-red-50 px-2.5 py-1.5 rounded-lg border border-red-100 animate-pulse">
             <Sparkles size={12} className="animate-spin" />
             <span>Kanta is configuring agent tools...</span>
           </div>
@@ -85,11 +85,11 @@ export default function GreetingBubble() {
                 onClick={() => handleActionClick(act)}
                 className={`inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-full border transition-all duration-200 ${
                   activeAction === act.id
-                    ? 'bg-[#D83025] text-white border-[#D83025] scale-105'
+                    ? 'bg-[#B92025] text-white border-[#B92025] scale-105'
                     : 'bg-slate-50 hover:bg-slate-100 text-slate-700 border-slate-200'
                 }`}
               >
-                <IconComp size={12} className={activeAction === act.id ? 'text-white' : 'text-[#D83025]'} />
+                <IconComp size={12} className={activeAction === act.id ? 'text-white' : 'text-[#B92025]'} />
                 <span>{act.label}</span>
               </button>
             );

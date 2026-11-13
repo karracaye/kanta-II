@@ -40,12 +40,12 @@ export default function UseCasesSection() {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-14 space-y-2">
-          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#B92025] uppercase font-['Outfit']">
             Use cases
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight font-['Outfit']">
             Processes with rules, <br />
-            <span className="text-[#D83025]">documents and approvals.</span>
+            <span className="text-[#B92025]">documents and approvals.</span>
           </h2>
         </div>
 
@@ -56,10 +56,10 @@ export default function UseCasesSection() {
             return (
               <div
                 key={idx}
-                className="kanta-glass-card kanta-glass-card-hover rounded-3xl p-6 sm:p-7 flex flex-col justify-between"
+                className="kanta-glass-card kanta-glass-card-hover rounded-3xl p-6 sm:p-7 flex flex-col justify-between hover:border-red-300"
               >
                 <div>
-                  <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#D83025] border border-red-100 flex items-center justify-center mb-4 shadow-2xs">
+                  <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#B92025] border border-red-100 flex items-center justify-center mb-4 shadow-2xs">
                     <IconComp size={22} />
                   </div>
                   <h3 className="text-lg font-bold text-slate-900 mb-2 font-['Outfit']">
@@ -72,7 +72,7 @@ export default function UseCasesSection() {
 
                 <Link
                   to={c.link}
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#D83025] hover:text-[#C0261D] transition-colors group"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#B92025] hover:text-[#9E1B1F] transition-colors group"
                 >
                   <span>{c.linkText}</span>
                   <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
@@ -84,7 +84,7 @@ export default function UseCasesSection() {
 
         {/* Line under the tiles per brief */}
         <div className="text-center pt-2">
-          <p className="text-xs sm:text-sm font-bold text-slate-800 bg-orange-50/70 inline-block px-6 py-3 rounded-full border border-orange-200 shadow-2xs font-['Outfit']">
+          <p className="text-xs sm:text-sm font-bold text-slate-800 bg-red-50/70 inline-block px-6 py-3 rounded-full border border-red-200 shadow-2xs font-['Outfit']">
             Kanta already runs production accounts payable workflows.
           </p>
         </div>

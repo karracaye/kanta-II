@@ -39,12 +39,12 @@ export default function InsuranceClaimsPage() {
         
         {/* Header */}
         <div className="max-w-3xl space-y-3">
-          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#B92025] uppercase font-['Outfit']">
             Solution · Insurance
           </p>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight font-['Outfit']">
             Claims move faster <br />
-            <span className="text-[#D83025]">when the rules are built in.</span>
+            <span className="text-[#B92025]">when the rules are built in.</span>
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-slate-500 font-medium leading-relaxed font-['Plus_Jakarta_Sans']">
             Kanta's AI builds a claims intake app around your approval rules, and your rules decide what it can change.
@@ -52,8 +52,8 @@ export default function InsuranceClaimsPage() {
         </div>
 
         {/* The Problem Box */}
-        <div className="bg-gradient-to-r from-red-50/70 via-orange-50/40 to-white rounded-3xl p-6 sm:p-8 border border-red-100 space-y-2.5 shadow-xs">
-          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#D83025]">
+        <div className="bg-gradient-to-r from-red-50/80 via-red-50/40 to-white rounded-3xl p-6 sm:p-8 border border-red-200/80 space-y-2.5 shadow-xs">
+          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#B92025]">
             <AlertTriangle size={16} />
             <span>The problem</span>
           </div>
@@ -66,7 +66,7 @@ export default function InsuranceClaimsPage() {
         <div className="kanta-glass-card rounded-3xl shadow-xl p-6 sm:p-8 space-y-6 border border-slate-200/90">
           <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-100">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-[#D83025]">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#B92025]">
                 Live Application Mockup
               </span>
               <h3 className="text-xl font-bold text-slate-900 font-['Outfit']">
@@ -118,13 +118,13 @@ export default function InsuranceClaimsPage() {
                     onClick={() => setSelectedClaim(claim.id)}
                     className={`p-4 rounded-2xl border text-left cursor-pointer transition-all ${
                       selectedClaim === claim.id
-                        ? 'border-[#D83025] bg-red-50/30 shadow-md ring-1 ring-red-500/20'
-                        : 'border-slate-200 bg-white hover:border-[#D83025]/50'
+                        ? 'border-[#B92025] bg-red-50/40 shadow-md ring-1 ring-red-500/20'
+                        : 'border-slate-200 bg-white hover:border-[#B92025]/50'
                     }`}
                   >
                     <div className="flex justify-between items-start">
                       <div>
-                        <span className="font-mono text-xs font-bold text-[#D83025]">{claim.id}</span>
+                        <span className="font-mono text-xs font-bold text-[#B92025]">{claim.id}</span>
                         <div className="font-bold text-sm text-slate-900 font-['Outfit']">{claim.claimant}</div>
                         <div className="text-xs text-slate-500">{claim.policy}</div>
                       </div>
@@ -135,7 +135,7 @@ export default function InsuranceClaimsPage() {
                         </span>
                       </div>
                     </div>
-                    <div className="mt-2 text-[11px] text-[#D83025] font-semibold">
+                    <div className="mt-2 text-[11px] text-[#B92025] font-semibold">
                       {claim.threshold}
                     </div>
                   </div>
@@ -146,14 +146,14 @@ export default function InsuranceClaimsPage() {
             {/* Right: Supervisor Decision Panel */}
             <div className="lg:col-span-5 bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-4 text-xs font-sans">
               <div className="flex items-center gap-2 pb-2 border-b border-slate-200">
-                <Sparkles size={16} className="text-[#D83025]" />
+                <Sparkles size={16} className="text-[#B92025]" />
                 <span className="font-bold text-xs uppercase tracking-wider text-slate-900 font-['Outfit']">
                   AI Summary & Decision Panel
                 </span>
               </div>
 
               <div className="bg-white p-4 rounded-xl border border-slate-200 space-y-1.5 shadow-2xs">
-                <span className="text-[10px] font-bold uppercase text-[#D83025]">AI Extraction Fact Check</span>
+                <span className="text-[10px] font-bold uppercase text-[#B92025]">AI Extraction Fact Check</span>
                 <p className="text-slate-800 leading-relaxed font-medium">
                   Hospitalization invoice matches incident date (12 Oct 2026). Surgery line-item S$5,200 verified with hospital tariff database. Zero duplicate claims found.
                 </p>
@@ -167,7 +167,7 @@ export default function InsuranceClaimsPage() {
                 <div className="grid grid-cols-2 gap-2">
                   <button
                     type="button"
-                    className="py-2.5 px-3 rounded-full bg-[#D83025] hover:bg-[#C0261D] text-white font-bold text-xs transition-colors flex items-center justify-center gap-1 shadow-xs cursor-pointer"
+                    className="py-2.5 px-3 rounded-full bg-[#B92025] hover:opacity-90 text-white font-bold text-xs transition-all flex items-center justify-center gap-1 shadow-md shadow-red-500/20 cursor-pointer"
                   >
                     <CheckCircle2 size={13} />
                     <span>Approve Claim</span>
@@ -191,7 +191,7 @@ export default function InsuranceClaimsPage() {
         {/* How Kanta Handles It */}
         <div className="space-y-8">
           <div className="max-w-2xl space-y-2">
-            <div className="text-xs font-bold uppercase tracking-wider text-[#D83025]">
+            <div className="text-xs font-bold uppercase tracking-wider text-[#B92025]">
               The solution
             </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-['Outfit']">
@@ -203,9 +203,9 @@ export default function InsuranceClaimsPage() {
             {handlingPoints.map((pt, idx) => (
               <div
                 key={idx}
-                className="kanta-glass-card kanta-glass-card-hover p-6 rounded-3xl space-y-2"
+                className="kanta-glass-card kanta-glass-card-hover p-6 rounded-3xl space-y-2 hover:border-red-300"
               >
-                <div className="w-9 h-9 rounded-xl bg-red-50 text-[#D83025] flex items-center justify-center font-bold text-xs mb-3 shadow-2xs font-['Outfit']">
+                <div className="w-9 h-9 rounded-xl bg-red-50 text-[#B92025] border border-red-100 flex items-center justify-center font-bold text-xs mb-3 shadow-2xs font-['Outfit']">
                   0{idx + 1}
                 </div>
                 <h3 className="font-bold text-base text-slate-900 font-['Outfit']">
@@ -222,7 +222,7 @@ export default function InsuranceClaimsPage() {
         {/* What a risk team gets & Proof */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="kanta-glass-card p-6 sm:p-8 rounded-3xl shadow-sm space-y-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#D83025]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#B92025]">
               Governance
             </span>
             <h3 className="text-xl font-bold text-slate-900 font-['Outfit']">
@@ -234,7 +234,7 @@ export default function InsuranceClaimsPage() {
           </div>
 
           <div className="kanta-glass-card p-6 sm:p-8 rounded-3xl shadow-sm space-y-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#D83025]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#B92025]">
               Validation
             </span>
             <h3 className="text-xl font-bold text-slate-900 font-['Outfit']">
@@ -247,7 +247,7 @@ export default function InsuranceClaimsPage() {
         </div>
 
         {/* Call to Action Box */}
-        <div className="bg-gradient-to-br from-red-50/60 via-white to-orange-50/40 border-2 border-red-100 rounded-3xl p-8 sm:p-12 text-center space-y-5 shadow-lg">
+        <div className="bg-gradient-to-br from-red-50/60 via-white to-red-50/30 border-2 border-red-200/80 rounded-3xl p-8 sm:p-12 text-center space-y-5 shadow-lg shadow-red-500/5">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-['Outfit']">
             Call to action
           </h2>
@@ -257,7 +257,7 @@ export default function InsuranceClaimsPage() {
           <div className="pt-2">
             <Link
               to="/demo"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#D83025] hover:bg-[#C0261D] text-white font-bold text-sm sm:text-base transition-all shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#B92025] hover:opacity-90 text-white font-bold text-sm sm:text-base transition-all shadow-md shadow-red-500/25 hover:shadow-lg hover:shadow-red-500/35 active:scale-95 cursor-pointer"
             >
               <span>Book a demo</span>
               <ArrowRight size={18} />

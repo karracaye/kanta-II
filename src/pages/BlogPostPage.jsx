@@ -16,7 +16,7 @@ export default function BlogPostPage() {
         <div>
           <Link
             to="/blog"
-            className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-[#D83025] transition-colors"
+            className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-[#B92025] transition-colors"
           >
             <ArrowLeft size={14} />
             <span>Back to Insights</span>
@@ -26,15 +26,15 @@ export default function BlogPostPage() {
         {/* Post Header */}
         <header className="space-y-4">
           <div className="flex items-center gap-2 text-xs font-semibold text-slate-400">
-            <Calendar size={14} className="text-[#D83025]" />
+            <Calendar size={14} className="text-[#B92025]" />
             <span>October 2026</span>
             <span>•</span>
-            <span className="text-[#D83025] uppercase font-bold text-[11px]">Case Study</span>
+            <span className="text-[#B92025] uppercase font-bold text-[11px]">Case Study</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight font-['Outfit']">
             We asked AI to build a claims app. <br />
-            <span className="text-[#D83025]">It stopped and asked for permission.</span>
+            <span className="text-[#B92025]">It stopped and asked for permission.</span>
           </h1>
         </header>
 
@@ -50,7 +50,7 @@ export default function BlogPostPage() {
             We put that question to our own platform in October 2026. We gave Kanta's AI app builder, Imagine, a four-sentence brief:
           </p>
 
-          <blockquote className="my-6 border-l-4 border-[#D83025] bg-red-50/50 p-5 rounded-r-2xl italic text-sm sm:text-base text-slate-900 leading-relaxed">
+          <blockquote className="my-6 border-l-4 border-[#B92025] bg-red-50/50 p-5 rounded-r-2xl italic text-sm sm:text-base text-slate-900 leading-relaxed">
             "Build a claims intake tracker where staff log the policy number, claimant, amount and incident date. Claims over 5,000 Singapore dollars need a supervisor's approval. Statuses run Submitted, Under review, Approved, Rejected. Use fictional sample data only."
           </blockquote>
 
@@ -94,7 +94,7 @@ export default function BlogPostPage() {
             </div>
 
             <div className="p-5 rounded-2xl bg-red-50/50 border-2 border-red-200 space-y-1.5">
-              <h3 className="font-bold text-base text-[#D83025] font-['Outfit']">
+              <h3 className="font-bold text-base text-[#B92025] font-['Outfit']">
                 Then it stopped.
               </h3>
               <p className="text-xs sm:text-sm text-slate-800">
@@ -116,7 +116,7 @@ export default function BlogPostPage() {
 
           <ul className="space-y-4 pt-2">
             <li className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-200">
-              <div className="w-7 h-7 rounded-xl bg-red-50 text-[#D83025] flex items-center justify-center shrink-0 mt-0.5">
+              <div className="w-7 h-7 rounded-xl bg-red-50 text-[#B92025] flex items-center justify-center shrink-0 mt-0.5">
                 <CheckCircle2 size={16} />
               </div>
               <div className="text-sm">
@@ -126,7 +126,7 @@ export default function BlogPostPage() {
             </li>
 
             <li className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-200">
-              <div className="w-7 h-7 rounded-xl bg-red-50 text-[#D83025] flex items-center justify-center shrink-0 mt-0.5">
+              <div className="w-7 h-7 rounded-xl bg-red-50 text-[#B92025] flex items-center justify-center shrink-0 mt-0.5">
                 <CheckCircle2 size={16} />
               </div>
               <div className="text-sm">
@@ -136,7 +136,7 @@ export default function BlogPostPage() {
             </li>
 
             <li className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-200">
-              <div className="w-7 h-7 rounded-xl bg-red-50 text-[#D83025] flex items-center justify-center shrink-0 mt-0.5">
+              <div className="w-7 h-7 rounded-xl bg-red-50 text-[#B92025] flex items-center justify-center shrink-0 mt-0.5">
                 <CheckCircle2 size={16} />
               </div>
               <div className="text-sm">
@@ -155,7 +155,7 @@ export default function BlogPostPage() {
         <div className="pt-8 border-t border-slate-100 text-center space-y-4">
           <Link
             to="/demo"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#D83025] hover:bg-[#C0261D] text-white font-bold text-sm sm:text-base transition-all shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#B92025] hover:opacity-90 text-white font-bold text-sm sm:text-base transition-all shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
           >
             <span>Book a demo</span>
             <ArrowRight size={18} />

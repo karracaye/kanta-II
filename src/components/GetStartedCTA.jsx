@@ -19,18 +19,18 @@ export default function GetStartedCTA({ onBookDemo }) {
         <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-md relative overflow-hidden text-left">
           
           {/* Top Red Accent Line */}
-          <div className="absolute top-0 left-0 right-0 h-1 bg-[#D83025]"></div>
+          <div className="absolute top-0 left-0 right-0 h-1 bg-[#B92025]"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
             
             {/* Left Column: Compact Copy */}
             <div className="md:col-span-7 space-y-2">
-              <p className="text-xs font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+              <p className="text-xs font-bold tracking-wider text-[#B92025] uppercase font-['Outfit']">
                 Get Started
               </p>
 
               <h2 className="text-2xl sm:text-3xl font-extrabold font-['Outfit'] tracking-tight text-slate-900 leading-snug">
-                Ready to unify your <span className="text-[#D83025]">AI stack?</span>
+                Ready to unify your <span className="text-[#B92025]">AI stack?</span>
               </h2>
 
               <p className="text-slate-500 text-xs font-medium leading-relaxed">
@@ -48,11 +48,11 @@ export default function GetStartedCTA({ onBookDemo }) {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter work email..."
-                    className="flex-1 bg-slate-50 border border-slate-200 rounded-full px-4 py-2 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-[#D83025] focus:bg-white transition-all font-medium"
+                    className="flex-1 bg-slate-50 border border-slate-200 rounded-full px-4 py-2 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-[#B92025] focus:bg-white transition-all font-medium"
                   />
                   <button
                     type="submit"
-                    className="bg-[#D83025] hover:bg-[#C0261D] text-white px-4 py-2 rounded-full font-bold text-xs transition-all shadow-2xs flex items-center justify-center gap-1 shrink-0 cursor-pointer active:scale-95"
+                    className="bg-[#B92025] hover:bg-[#9E1B1F] text-white px-4 py-2 rounded-full font-bold text-xs transition-all shadow-2xs flex items-center justify-center gap-1 shrink-0 cursor-pointer active:scale-95"
                   >
                     <span>Request Demo</span>
                     <ArrowRight size={13} />
@@ -68,17 +68,17 @@ export default function GetStartedCTA({ onBookDemo }) {
               {/* Feature Checklist */}
               <div className="flex flex-wrap items-center gap-2.5 text-[10px] text-slate-500 font-medium pt-1">
                 <span className="flex items-center gap-1">
-                  <CheckCircle2 size={11} className="text-[#D83025]" />
+                  <CheckCircle2 size={11} className="text-[#B92025]" />
                   <span>Enterprise security</span>
                 </span>
                 <span>•</span>
                 <span className="flex items-center gap-1">
-                  <CheckCircle2 size={11} className="text-[#D83025]" />
+                  <CheckCircle2 size={11} className="text-[#B92025]" />
                   <span>Deploy in minutes</span>
                 </span>
                 <span>•</span>
                 <span className="flex items-center gap-1">
-                  <CheckCircle2 size={11} className="text-[#D83025]" />
+                  <CheckCircle2 size={11} className="text-[#B92025]" />
                   <span>Cloud Hosted</span>
                 </span>
               </div>
@@ -94,7 +94,7 @@ export default function GetStartedCTA({ onBookDemo }) {
             className="bg-white hover:bg-slate-50 border border-slate-200/90 rounded-full p-3.5 px-5 flex items-center justify-between transition-all shadow-2xs group"
           >
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-red-50 text-[#D83025] flex items-center justify-center border border-red-100">
+              <div className="w-8 h-8 rounded-full bg-red-50 text-[#B92025] flex items-center justify-center border border-red-100">
                 <Mail size={15} />
               </div>
               <div>
@@ -102,7 +102,7 @@ export default function GetStartedCTA({ onBookDemo }) {
                 <span className="text-[10px] text-slate-500 font-medium">ask@kanta.ai</span>
               </div>
             </div>
-            <ArrowRight size={14} className="text-slate-400 group-hover:text-[#D83025] group-hover:translate-x-1 transition-all" />
+            <ArrowRight size={14} className="text-slate-400 group-hover:text-[#B92025] group-hover:translate-x-1 transition-all" />
           </a>
 
           <button
@@ -118,7 +118,7 @@ export default function GetStartedCTA({ onBookDemo }) {
                 <span className="text-[10px] text-slate-500 font-medium">30-minute walkthrough</span>
               </div>
             </div>
-            <ArrowRight size={14} className="text-slate-400 group-hover:text-[#D83025] group-hover:translate-x-1 transition-all" />
+            <ArrowRight size={14} className="text-slate-400 group-hover:text-[#B92025] group-hover:translate-x-1 transition-all" />
           </button>
         </div>
 

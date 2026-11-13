@@ -18,7 +18,7 @@ export default function DemoModal({ isOpen, onClose }) {
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-md animate-in fade-in duration-200 font-sans">
       <div className="relative w-full max-w-md bg-white rounded-3xl p-8 border border-slate-200 shadow-2xl overflow-hidden">
         {/* Top Decorative Red Accent Bar */}
-        <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-[#D83025] via-[#FF5722] to-[#E53935]"></div>
+        <div className="absolute top-0 left-0 right-0 h-2 bg-[#B92025]"></div>
 
         {/* Close Button */}
         <button
@@ -31,7 +31,7 @@ export default function DemoModal({ isOpen, onClose }) {
         {!submitted ? (
           <div className="text-center space-y-4">
             {/* Logo Mark */}
-            <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#D83025] flex items-center justify-center mx-auto shadow-sm border border-red-100">
+            <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#B92025] flex items-center justify-center mx-auto shadow-sm border border-red-100">
               <Sparkles size={24} />
             </div>
 
@@ -54,7 +54,7 @@ export default function DemoModal({ isOpen, onClose }) {
                   value={fullName}
                   onChange={(e) => setFullName(e.target.value)}
                   placeholder="Alex Morgan"
-                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-900 focus:outline-none focus:border-[#D83025] focus:bg-white transition-all placeholder-slate-400 font-medium"
+                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-900 focus:outline-none focus:border-[#B92025] focus:bg-white transition-all placeholder-slate-400 font-medium"
                 />
               </div>
 
@@ -68,14 +68,14 @@ export default function DemoModal({ isOpen, onClose }) {
                   value={emailInput}
                   onChange={(e) => setEmailInput(e.target.value)}
                   placeholder="alex@company.com"
-                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-900 focus:outline-none focus:border-[#D83025] focus:bg-white transition-all placeholder-slate-400 font-medium"
+                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-900 focus:outline-none focus:border-[#B92025] focus:bg-white transition-all placeholder-slate-400 font-medium"
                 />
               </div>
 
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full bg-[#D83025] hover:bg-[#C0261D] text-white py-3 rounded-xl font-bold text-sm transition-all duration-200 shadow-md shadow-red-900/20 flex items-center justify-center gap-2 active:scale-95"
+                  className="w-full bg-[#B92025] hover:opacity-90 text-white py-3 rounded-xl font-bold text-sm transition-all duration-200 shadow-md shadow-red-900/20 flex items-center justify-center gap-2 active:scale-95"
                 >
                   <span>Request Live Demo</span>
                   <ArrowRight size={16} />
@@ -99,7 +99,7 @@ export default function DemoModal({ isOpen, onClose }) {
             </h3>
 
             <p className="text-xs text-slate-600 leading-relaxed font-medium">
-              Thank you <strong className="text-slate-900">{fullName || 'Alex'}</strong>. We have sent your access invite to <span className="text-[#D83025] font-semibold">{emailInput}</span>. Our technical leads will reach out within 2 hours.
+              Thank you <strong className="text-slate-900">{fullName || 'Alex'}</strong>. We have sent your access invite to <span className="text-[#B92025] font-semibold">{emailInput}</span>. Our technical leads will reach out within 2 hours.
             </p>
 
             <button

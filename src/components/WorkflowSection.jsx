@@ -43,13 +43,13 @@ export default function WorkflowSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column Text */}
           <div className="lg:col-span-5 space-y-6 text-left">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-50 text-[#D83025] text-xs font-bold uppercase tracking-wider border border-red-100">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-50 text-[#B92025] text-xs font-bold uppercase tracking-wider border border-red-100">
               <RefreshCw size={14} className={isRunning ? 'animate-spin' : ''} />
               <span>Real-Time Orchestration</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-['Outfit'] tracking-tight text-slate-900 leading-tight">
-              Automate complex workflows in <span className="text-[#D83025]">3 simple steps.</span>
+              Automate complex workflows in <span className="text-[#B92025]">3 simple steps.</span>
             </h2>
 
             <p className="text-slate-600 text-base leading-relaxed font-medium">
@@ -60,7 +60,7 @@ export default function WorkflowSection() {
               <button
                 onClick={handleTestRun}
                 disabled={isRunning}
-                className="bg-[#D83025] hover:bg-[#C0261D] text-white px-7 py-3 rounded-full font-bold text-sm transition-all duration-300 shadow-md shadow-red-900/20 flex items-center gap-2.5 active:scale-95 disabled:opacity-50"
+                className="bg-[#B92025] hover:bg-[#9E1B1F] text-white px-7 py-3 rounded-full font-bold text-sm transition-all duration-300 shadow-md shadow-red-900/20 flex items-center gap-2.5 active:scale-95 disabled:opacity-50"
               >
                 <Play size={16} className="fill-current" />
                 <span>{isRunning ? 'Running Agent Simulation...' : 'Simulate Workflow Run'}</span>
@@ -96,7 +96,7 @@ export default function WorkflowSection() {
                     onClick={() => setActiveStep(step.id)}
                     className={`p-4 rounded-2xl border transition-all duration-300 cursor-pointer ${
                       isActive
-                        ? 'bg-white border-[#D83025] shadow-md ring-2 ring-red-500/10 translate-x-1.5'
+                        ? 'bg-white border-[#B92025] shadow-md ring-2 ring-red-500/10 translate-x-1.5'
                         : isPassed
                         ? 'bg-white/80 border-emerald-200 text-slate-700'
                         : 'bg-white/50 border-slate-200/80 text-slate-400'
@@ -107,7 +107,7 @@ export default function WorkflowSection() {
                         <div
                           className={`w-10 h-10 rounded-xl flex items-center justify-center font-bold text-sm transition-colors ${
                             isActive
-                              ? 'bg-[#D83025] text-white shadow-sm'
+                              ? 'bg-[#B92025] text-white shadow-sm'
                               : isPassed
                               ? 'bg-emerald-50 text-emerald-600 border border-emerald-200'
                               : 'bg-slate-100 text-slate-400'
@@ -124,12 +124,12 @@ export default function WorkflowSection() {
                       {isPassed ? (
                         <CheckCircle2 size={20} className="text-emerald-500" />
                       ) : isActive ? (
-                        <div className="w-2.5 h-2.5 rounded-full bg-[#D83025] animate-ping"></div>
+                        <div className="w-2.5 h-2.5 rounded-full bg-[#B92025] animate-ping"></div>
                       ) : null}
                     </div>
 
                     {isActive && (
-                      <div className="mt-3 pt-3 border-t border-slate-100 text-xs font-mono text-[#D83025] bg-red-50/60 p-2.5 rounded-lg border border-red-100">
+                      <div className="mt-3 pt-3 border-t border-slate-100 text-xs font-mono text-[#B92025] bg-red-50/60 p-2.5 rounded-lg border border-red-100">
                         ➜ Status: {step.detail}
                       </div>
                     )}

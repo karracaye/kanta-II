@@ -37,8 +37,8 @@ export default function FloatingFeatureCard({ type, className = '' }) {
   return (
     <div
       onClick={() => setActive(!active)}
-      className={`kanta-glass-card rounded-xl px-4 py-3 flex items-center justify-between gap-3 cursor-pointer select-none transition-colors duration-200 w-full max-w-[300px] ${
-        active ? 'border-[#D83025] ring-2 ring-red-500/20 bg-white' : ''
+      className={`kanta-glass-card rounded-xl px-4 py-3 flex items-center justify-between gap-3 cursor-pointer select-none transition-all duration-200 w-full max-w-[300px] ${
+        active ? 'border-[#B92025] ring-2 ring-red-500/20 bg-white shadow-md' : 'hover:border-red-200'
       } ${className}`}
     >
       <div className="flex items-center gap-3">
@@ -46,8 +46,8 @@ export default function FloatingFeatureCard({ type, className = '' }) {
         <div
           className={`w-8 h-8 rounded-lg flex items-center justify-center transition-colors shrink-0 ${
             active
-              ? 'bg-[#D83025] text-white shadow-xs'
-              : 'bg-slate-100 text-slate-700 group-hover:bg-red-50 group-hover:text-[#D83025]'
+              ? 'bg-[#B92025] text-white shadow-xs'
+              : 'bg-slate-100 text-slate-700 group-hover:bg-red-50 group-hover:text-[#B92025]'
           }`}
         >
           <IconComponent size={16} />

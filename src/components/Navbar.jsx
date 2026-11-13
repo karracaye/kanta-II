@@ -66,7 +66,7 @@ export default function Navbar({ onBookDemo }) {
             <a
               href="/#how-it-works"
               onClick={(e) => handleAnchorClick(e, 'how-it-works')}
-              className="hover:text-[#D83025] transition-colors py-1"
+              className="hover:text-[#B92025] transition-colors py-1"
             >
               How it works
             </a>
@@ -77,30 +77,30 @@ export default function Navbar({ onBookDemo }) {
                 type="button"
                 onClick={() => setSolutionsOpen(!solutionsOpen)}
                 onMouseEnter={() => setSolutionsOpen(true)}
-                className="flex items-center gap-1 hover:text-[#D83025] transition-colors py-1 cursor-pointer focus:outline-hidden"
+                className="flex items-center gap-1 hover:text-[#B92025] transition-colors py-1 cursor-pointer focus:outline-hidden"
               >
                 <span>Solutions</span>
                 <ChevronDown
                   size={15}
-                  className={`transition-transform duration-200 ${solutionsOpen ? 'rotate-180 text-[#D83025]' : ''}`}
+                  className={`transition-transform duration-200 ${solutionsOpen ? 'rotate-180 text-[#B92025]' : ''}`}
                 />
               </button>
 
               {solutionsOpen && (
                 <div
                   onMouseLeave={() => setSolutionsOpen(false)}
-                  className="absolute top-full left-0 mt-2 w-64 bg-white/95 backdrop-blur-lg rounded-2xl shadow-xl border border-slate-200/90 py-2.5 z-50 animate-in fade-in slide-in-from-top-2 duration-150"
+                  className="absolute top-full left-0 mt-2 w-64 bg-white/95 backdrop-blur-lg rounded-2xl shadow-xl border border-red-100 py-2.5 z-50 animate-in fade-in slide-in-from-top-2 duration-150"
                 >
                   <Link
                     to="/solutions/insurance-claims"
-                    className="block px-4 py-2.5 hover:bg-orange-50/60 transition-colors"
+                    className="block px-4 py-2.5 hover:bg-red-50/70 transition-colors"
                   >
                     <div className="font-bold text-slate-900 text-sm">Insurance claims</div>
                     <div className="text-xs text-slate-500 font-medium">Claims intake with approval rules</div>
                   </Link>
                   <Link
                     to="/solutions/invoice-approval"
-                    className="block px-4 py-2.5 hover:bg-orange-50/60 transition-colors border-t border-slate-100"
+                    className="block px-4 py-2.5 hover:bg-red-50/70 transition-colors border-t border-slate-100"
                   >
                     <div className="font-bold text-slate-900 text-sm">Invoice approval</div>
                     <div className="text-xs text-slate-500 font-medium">Invoice capture and approval</div>
@@ -111,14 +111,14 @@ export default function Navbar({ onBookDemo }) {
 
             <Link
               to="/security"
-              className={`hover:text-[#D83025] transition-colors py-1 ${location.pathname === '/security' ? 'text-[#D83025]' : ''}`}
+              className={`hover:text-[#B92025] transition-colors py-1 ${location.pathname === '/security' ? 'text-[#B92025] font-semibold' : ''}`}
             >
               Security
             </Link>
 
             <Link
               to="/blog"
-              className={`hover:text-[#D83025] transition-colors py-1 ${location.pathname.startsWith('/blog') ? 'text-[#D83025]' : ''}`}
+              className={`hover:text-[#B92025] transition-colors py-1 ${location.pathname.startsWith('/blog') ? 'text-[#B92025] font-semibold' : ''}`}
             >
               Blog
             </Link>
@@ -127,18 +127,18 @@ export default function Navbar({ onBookDemo }) {
               href="https://apps.kanta.ai/studio"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-500 hover:text-[#D83025] transition-colors flex items-center gap-1 py-1"
+              className="text-slate-500 hover:text-[#B92025] transition-colors flex items-center gap-1 py-1"
             >
               <span>Sign in</span>
               <ExternalLink size={13} className="opacity-70" />
             </a>
           </nav>
 
-          {/* Book a demo Button per Brief */}
+          {/* Book a demo Button per Brief with Kanta Logo Red */}
           <div className="hidden md:flex items-center gap-3">
             <Link
               to="/demo"
-              className="bg-[#D83025] hover:bg-[#C0261D] text-white px-7 py-2.5 rounded-full font-bold text-sm border-2 border-red-600 transition-all duration-300 shadow-md hover:shadow-lg active:scale-95 flex items-center gap-2 cursor-pointer"
+              className="bg-[#B92025] hover:opacity-90 text-white px-7 py-2.5 rounded-full font-bold text-sm transition-all duration-300 shadow-md shadow-red-900/15 hover:shadow-lg active:scale-95 flex items-center gap-2 cursor-pointer"
             >
               <span>Book a demo</span>
             </Link>
@@ -148,13 +148,13 @@ export default function Navbar({ onBookDemo }) {
           <div className="md:hidden flex items-center gap-2">
             <Link
               to="/demo"
-              className="bg-[#D83025] text-white px-4 py-1.5 rounded-full font-bold text-xs shadow-sm"
+              className="bg-[#B92025] text-white px-4 py-1.5 rounded-full font-bold text-xs shadow-sm shadow-red-900/15"
             >
               Book a demo
             </Link>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-slate-700 hover:text-[#D83025] transition-colors"
+              className="p-2 text-slate-700 hover:text-[#B92025] transition-colors"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -171,24 +171,24 @@ export default function Navbar({ onBookDemo }) {
               setMobileMenuOpen(false);
               handleAnchorClick(e, 'how-it-works');
             }}
-            className="block text-sm font-semibold text-slate-800 hover:text-[#D83025] py-2 border-b border-slate-100"
+            className="block text-sm font-semibold text-slate-800 hover:text-[#B92025] py-2 border-b border-slate-100"
           >
             How it works
           </a>
           
           <div className="py-2 border-b border-slate-100 space-y-1">
-            <div className="text-xs font-bold uppercase tracking-wider text-[#D83025]">Solutions</div>
+            <div className="text-xs font-bold uppercase tracking-wider text-[#B92025]">Solutions</div>
             <Link
               to="/solutions/insurance-claims"
               onClick={() => setMobileMenuOpen(false)}
-              className="block text-sm font-medium text-slate-700 hover:text-[#D83025] pl-2 py-1"
+              className="block text-sm font-medium text-slate-700 hover:text-[#B92025] pl-2 py-1"
             >
               Insurance claims
             </Link>
             <Link
               to="/solutions/invoice-approval"
               onClick={() => setMobileMenuOpen(false)}
-              className="block text-sm font-medium text-slate-700 hover:text-[#D83025] pl-2 py-1"
+              className="block text-sm font-medium text-slate-700 hover:text-[#B92025] pl-2 py-1"
             >
               Invoice approval
             </Link>
@@ -197,7 +197,7 @@ export default function Navbar({ onBookDemo }) {
           <Link
             to="/security"
             onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-semibold text-slate-800 hover:text-[#D83025] py-2 border-b border-slate-100"
+            className="block text-sm font-semibold text-slate-800 hover:text-[#B92025] py-2 border-b border-slate-100"
           >
             Security
           </Link>
@@ -205,7 +205,7 @@ export default function Navbar({ onBookDemo }) {
           <Link
             to="/blog"
             onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-semibold text-slate-800 hover:text-[#D83025] py-2 border-b border-slate-100"
+            className="block text-sm font-semibold text-slate-800 hover:text-[#B92025] py-2 border-b border-slate-100"
           >
             Blog
           </Link>
@@ -214,7 +214,7 @@ export default function Navbar({ onBookDemo }) {
             href="https://apps.kanta.ai/studio"
             target="_blank"
             rel="noopener noreferrer"
-            className="block text-sm font-semibold text-slate-600 hover:text-[#D83025] py-2"
+            className="block text-sm font-semibold text-slate-600 hover:text-[#B92025] py-2"
           >
             Sign in (Studio)
           </a>

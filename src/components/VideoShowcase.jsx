@@ -77,7 +77,7 @@ export default function VideoShowcase() {
             {/* Fallback Display if video file is not uploaded yet */}
             {hasVideoError && (
               <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
-                <div className="w-16 h-16 rounded-2xl bg-red-950/80 border border-red-500/30 text-[#D83025] flex items-center justify-center mb-4 shadow-lg animate-pulse">
+                <div className="w-16 h-16 rounded-2xl bg-red-950/80 border border-red-500/30 text-[#B92025] flex items-center justify-center mb-4 shadow-lg animate-pulse">
                   <Video size={32} />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2 font-['Outfit']">
@@ -98,7 +98,7 @@ export default function VideoShowcase() {
                 onClick={togglePlay}
                 className="absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] flex items-center justify-center cursor-pointer transition-opacity group-hover:bg-slate-950/20"
               >
-                <div className="w-20 h-20 rounded-full bg-[#D83025] hover:bg-[#C0261D] text-white flex items-center justify-center shadow-2xl transition-all duration-300 transform group-hover:scale-110 active:scale-95">
+                <div className="w-20 h-20 rounded-full bg-[#B92025] hover:bg-[#9E1B1F] text-white flex items-center justify-center shadow-2xl transition-all duration-300 transform group-hover:scale-110 active:scale-95">
                   <Play size={32} className="transform translate-x-0.5 fill-current" />
                 </div>
               </div>

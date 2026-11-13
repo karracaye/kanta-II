@@ -26,11 +26,11 @@ export default function AuditSection() {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-14 space-y-2">
-          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#B92025] uppercase font-['Outfit']">
             AI you can audit
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight font-['Outfit']">
-            AI you can <span className="text-[#D83025]">audit.</span>
+            AI you can <span className="text-[#B92025]">audit.</span>
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-slate-500 font-medium leading-relaxed pt-1 font-['Plus_Jakarta_Sans']">
             Every workflow run is traced: inputs, outputs, the version that ran, each step's status and timing, and timestamped logs. Every AI request is logged with the model used, the tokens consumed, who made it and when.
@@ -44,9 +44,9 @@ export default function AuditSection() {
             return (
               <div
                 key={idx}
-                className="kanta-glass-card kanta-glass-card-hover rounded-3xl p-6 sm:p-7 relative"
+                className="kanta-glass-card kanta-glass-card-hover rounded-3xl p-6 sm:p-7 relative hover:border-red-300"
               >
-                <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#D83025] border border-red-100 flex items-center justify-center mb-4 shadow-2xs">
+                <div className="w-12 h-12 rounded-2xl bg-red-50 text-[#B92025] border border-red-100 flex items-center justify-center mb-4 shadow-2xs">
                   <IconComp size={22} />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900 mb-2 font-['Outfit']">
@@ -64,7 +64,7 @@ export default function AuditSection() {
         <div className="bg-[#0F172A] text-slate-200 rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-800">
           <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-800 mb-6">
             <div className="flex items-center gap-2.5">
-              <Terminal size={18} className="text-[#D83025]" />
+              <Terminal size={18} className="text-[#B92025]" />
               <span className="text-xs font-bold uppercase tracking-wider text-slate-300 font-mono">
                 Run Trace #run_8932_claims_intake
               </span>
@@ -94,7 +94,7 @@ export default function AuditSection() {
             </div>
 
             {/* Step 2 (AI Step with Model & Tokens) */}
-            <div className="p-3.5 bg-slate-900/90 rounded-xl border border-red-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div className="p-3.5 bg-slate-900/90 rounded-xl border border-[#B92025]/60 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <div className="flex items-center gap-2.5">
                 <CheckCircle2 size={15} className="text-emerald-400 shrink-0" />
                 <span className="text-slate-500">[0.02s]</span>

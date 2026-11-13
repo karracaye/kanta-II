@@ -23,12 +23,12 @@ export default function EmbeddedAgentSection() {
         
         {/* --- HEADER BLOCK --- */}
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-2">
-          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#B92025] uppercase font-['Outfit']">
             Embedded AI Agent
           </p>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 font-['Outfit'] tracking-tight">
-            Add AI to your product <span className="text-[#D83025]">in one line</span>
+            Add AI to your product <span className="text-[#B92025]">in one line</span>
           </h2>
 
           <p className="text-slate-600 text-sm sm:text-base font-medium leading-relaxed">
@@ -66,7 +66,7 @@ export default function EmbeddedAgentSection() {
               <div className="space-y-3">
                 {/* User Message */}
                 <div className="flex justify-end">
-                  <div className="bg-[#D83025] text-white font-medium px-4 py-2.5 rounded-2xl rounded-tr-xs max-w-[85%] shadow-2xs">
+                  <div className="bg-[#B92025] text-white font-medium px-4 py-2.5 rounded-2xl rounded-tr-xs max-w-[85%] shadow-2xs">
                     What's my current order status?
                   </div>
                 </div>
@@ -99,7 +99,7 @@ export default function EmbeddedAgentSection() {
 
                 {/* Typing Row */}
                 <div className="flex items-center gap-2 text-[11px] text-slate-500 font-mono pt-1">
-                  <span className="w-2 h-2 rounded-full bg-[#D83025] animate-ping"></span>
+                  <span className="w-2 h-2 rounded-full bg-[#B92025] animate-ping"></span>
                   <span>AI is querying database...</span>
                 </div>
               </div>
@@ -112,7 +112,7 @@ export default function EmbeddedAgentSection() {
                   value="Ask about your orders, invoices, analytics..."
                   className="flex-1 bg-white border border-slate-200 text-slate-500 text-xs px-4 py-2 rounded-full outline-none"
                 />
-                <button type="button" className="w-7 h-7 rounded-full bg-[#D83025] text-white flex items-center justify-center shrink-0 shadow-2xs">
+                <button type="button" className="w-7 h-7 rounded-full bg-[#B92025] text-white flex items-center justify-center shrink-0 shadow-2xs">
                   <Send size={12} />
                 </button>
               </div>
@@ -186,7 +186,7 @@ export default function EmbeddedAgentSection() {
 
             {/* Security Banner */}
             <div className="bg-white border border-slate-200/90 rounded-2xl p-4 flex items-start gap-3 text-slate-900 shadow-2xs">
-              <div className="w-8 h-8 rounded-full bg-[#D83025] text-white flex items-center justify-center shrink-0 shadow-2xs">
+              <div className="w-8 h-8 rounded-full bg-[#B92025] text-white flex items-center justify-center shrink-0 shadow-2xs">
                 <ShieldCheck size={16} />
               </div>
               <div>

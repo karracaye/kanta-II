@@ -22,12 +22,12 @@ export default function ProblemSolutionSection({ onBookDemo }) {
         
         {/* --- HEADER BLOCK --- */}
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-2">
-          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#B92025] uppercase font-['Outfit']">
             Platform Transformer
           </p>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-['Outfit'] tracking-tight text-slate-900 leading-tight">
-            Your AI stack is <span className="text-[#D83025]">too fragmented</span>
+            Your AI stack is <span className="text-[#B92025]">too fragmented</span>
           </h2>
 
           <p className="text-slate-600 text-sm sm:text-base font-medium leading-relaxed">
@@ -53,7 +53,7 @@ export default function ProblemSolutionSection({ onBookDemo }) {
                 onClick={() => setActiveMode('kanta')}
                 className={`px-5 py-2 rounded-full text-xs font-bold transition-all flex items-center gap-2 cursor-pointer ${
                   activeMode === 'kanta'
-                    ? 'bg-[#D83025] text-white shadow-xs'
+                    ? 'bg-[#B92025] text-white shadow-xs'
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
@@ -90,10 +90,10 @@ export default function ProblemSolutionSection({ onBookDemo }) {
               {/* Real-time Telemetry Pills */}
               <div className="flex items-center gap-2 text-xs font-mono">
                 <span className="px-3.5 py-1.5 rounded-full bg-slate-50 text-slate-700 border border-slate-200 flex items-center gap-1.5 font-semibold">
-                  <Activity size={13} className="text-[#D83025]" />
+                  <Activity size={13} className="text-[#B92025]" />
                   <span>2,400 Req/sec</span>
                 </span>
-                <span className="px-3.5 py-1.5 rounded-full bg-red-50 text-[#D83025] border border-red-100 font-semibold flex items-center gap-1">
+                <span className="px-3.5 py-1.5 rounded-full bg-red-50 text-[#B92025] border border-red-100 font-semibold flex items-center gap-1">
                   <Zap size={13} />
                   <span>12ms Latency</span>
                 </span>
@@ -107,7 +107,7 @@ export default function ProblemSolutionSection({ onBookDemo }) {
                   <Terminal size={14} className="text-slate-700" />
                   <strong className="text-slate-800">live_pipeline_orchestrator.dag</strong>
                 </span>
-                <span className="text-[#D83025] font-bold flex items-center gap-1 px-3 py-0.5 rounded-full border border-red-100 bg-white">
+                <span className="text-[#B92025] font-bold flex items-center gap-1 px-3 py-0.5 rounded-full border border-red-100 bg-white">
                   <CheckCircle2 size={13} />
                   <span>100% Synced</span>
                 </span>
@@ -155,7 +155,7 @@ export default function ProblemSolutionSection({ onBookDemo }) {
             {/* 4 Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
               <div className="bg-[#FAF6F0] p-4 rounded-2xl border border-slate-200/80 space-y-1.5">
-                <CheckCircle2 size={16} className="text-[#D83025]" />
+                <CheckCircle2 size={16} className="text-[#B92025]" />
                 <h4 className="text-xs font-bold text-slate-900 font-['Outfit']">Full-Stack Synergy</h4>
                 <p className="text-[11px] text-slate-600 font-medium leading-relaxed">
                   Frontend UI, visual backend logic, and vector database unified in 1 engine.
@@ -163,7 +163,7 @@ export default function ProblemSolutionSection({ onBookDemo }) {
               </div>
 
               <div className="bg-[#FAF6F0] p-4 rounded-2xl border border-slate-200/80 space-y-1.5">
-                <CheckCircle2 size={16} className="text-[#D83025]" />
+                <CheckCircle2 size={16} className="text-[#B92025]" />
                 <h4 className="text-xs font-bold text-slate-900 font-['Outfit']">Visual DAG Builder</h4>
                 <p className="text-[11px] text-slate-600 font-medium leading-relaxed">
                   Construct complex multi-agent workflows drag-and-drop with zero code needed.
@@ -171,7 +171,7 @@ export default function ProblemSolutionSection({ onBookDemo }) {
               </div>
 
               <div className="bg-[#FAF6F0] p-4 rounded-2xl border border-slate-200/80 space-y-1.5">
-                <CheckCircle2 size={16} className="text-[#D83025]" />
+                <CheckCircle2 size={16} className="text-[#B92025]" />
                 <h4 className="text-xs font-bold text-slate-900 font-['Outfit']">Self-Hosted & VPC</h4>
                 <p className="text-[11px] text-slate-600 font-medium leading-relaxed">
                   Keep your sensitive enterprise data isolated inside your private cloud.
@@ -179,7 +179,7 @@ export default function ProblemSolutionSection({ onBookDemo }) {
               </div>
 
               <div className="bg-[#FAF6F0] p-4 rounded-2xl border border-slate-200/80 space-y-1.5">
-                <CheckCircle2 size={16} className="text-[#D83025]" />
+                <CheckCircle2 size={16} className="text-[#B92025]" />
                 <h4 className="text-xs font-bold text-slate-900 font-['Outfit']">Multi-LLM Support</h4>
                 <p className="text-[11px] text-slate-600 font-medium leading-relaxed">
                   Seamlessly route between OpenAI, Anthropic Claude, Llama 3, and custom models.
@@ -191,7 +191,7 @@ export default function ProblemSolutionSection({ onBookDemo }) {
             <div className="pt-2 flex justify-center">
               <button
                 onClick={onBookDemo}
-                className="bg-[#D83025] hover:bg-[#C0261D] text-white px-7 py-3 rounded-full font-bold text-xs transition-all shadow-md flex items-center gap-2 cursor-pointer active:scale-95"
+                className="bg-[#B92025] hover:bg-[#9E1B1F] text-white px-7 py-3 rounded-full font-bold text-xs transition-all shadow-md flex items-center gap-2 cursor-pointer active:scale-95"
               >
                 <span>Switch to Unified Engine</span>
                 <ArrowRight size={15} />

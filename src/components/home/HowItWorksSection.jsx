@@ -35,12 +35,12 @@ export default function HowItWorksSection() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-2">
-          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#B92025] uppercase font-['Outfit']">
             How it works
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight font-['Outfit']">
             Describe your process. <br />
-            <span className="text-[#D83025]">Kanta builds the app.</span>
+            <span className="text-[#B92025]">Kanta builds the app.</span>
           </h2>
         </div>
 
@@ -51,10 +51,10 @@ export default function HowItWorksSection() {
             return (
               <div
                 key={step.num}
-                className="kanta-glass-card kanta-glass-card-hover rounded-2xl p-6 relative flex flex-col"
+                className="kanta-glass-card kanta-glass-card-hover rounded-2xl p-6 relative flex flex-col hover:border-red-200"
               >
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-11 h-11 rounded-xl bg-red-50 text-[#D83025] flex items-center justify-center font-bold text-base shadow-2xs">
+                  <div className="w-11 h-11 rounded-xl bg-red-50 text-[#B92025] border border-red-100 flex items-center justify-center font-bold text-base shadow-2xs">
                     <IconComponent size={22} />
                   </div>
                   <span className="text-2xl font-black text-slate-200 font-['Outfit']">
@@ -75,13 +75,13 @@ export default function HowItWorksSection() {
         </div>
 
         {/* Visual per brief: "The owner-approval note at the end of an AI build" */}
-        <div className="max-w-3xl mx-auto bg-white rounded-3xl border-2 border-red-200 shadow-xl p-6 sm:p-8 relative overflow-hidden">
+        <div className="max-w-3xl mx-auto bg-white rounded-3xl border-2 border-red-200/90 shadow-xl p-6 sm:p-8 relative overflow-hidden">
           <div className="flex items-center gap-3 pb-4 border-b border-slate-100 mb-5">
-            <div className="w-10 h-10 rounded-xl bg-red-50 text-[#D83025] flex items-center justify-center shadow-xs">
+            <div className="w-10 h-10 rounded-xl bg-red-50 text-[#B92025] border border-red-100 flex items-center justify-center shadow-xs">
               <ShieldAlert size={22} />
             </div>
             <div>
-              <div className="text-xs font-bold uppercase tracking-wider text-[#D83025]">
+              <div className="text-xs font-bold uppercase tracking-wider text-[#B92025]">
                 Build Verification · Step 4
               </div>
               <h4 className="text-base sm:text-lg font-bold text-slate-900 font-['Outfit']">
@@ -91,7 +91,7 @@ export default function HowItWorksSection() {
           </div>
 
           <div className="space-y-4 text-sm text-slate-800">
-            <p className="bg-red-50/50 border border-red-100 rounded-2xl p-4 leading-relaxed font-medium">
+            <p className="bg-red-50/60 border border-red-100 rounded-2xl p-4 leading-relaxed font-medium">
               <strong>Note for App Owner:</strong> The intake workflow saves new claims with system credentials outside the table's normal write rules. This allows frontline staff to log submissions without granting them permissions to edit or reassign claims later.
             </p>
 
@@ -112,7 +112,7 @@ export default function HowItWorksSection() {
               </span>
               <button
                 type="button"
-                className="px-5 py-2.5 rounded-full bg-[#D83025] hover:bg-[#C0261D] text-white text-xs font-bold transition-all shadow-md hover:shadow-lg flex items-center gap-1.5 cursor-pointer"
+                className="px-5 py-2.5 rounded-full bg-[#B92025] hover:opacity-90 text-white text-xs font-bold transition-all shadow-md shadow-red-900/15 hover:shadow-lg flex items-center gap-1.5 cursor-pointer"
               >
                 <Check size={14} />
                 <span>Approve & Deploy App</span>

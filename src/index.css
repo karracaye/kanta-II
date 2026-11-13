@@ -2,9 +2,11 @@
 
 @layer base {
   :root {
-    --color-kanta-red: #D83025;
-    --color-kanta-orange: #FF5722;
-    --color-kanta-gold: #FBBF24;
+    --color-kanta-red: #B92025;
+    --color-kanta-red-dark: #B92025;
+    --color-kanta-red-bright: #B92025;
+    --color-kanta-orange: #ED683C;
+    --color-kanta-gold: #FBB03C;
     --color-kanta-dark: #0F172A;
     --font-heading: 'Space Grotesk', 'Outfit', sans-serif;
     --font-body: 'Plus Jakarta Sans', sans-serif;
@@ -29,7 +31,7 @@
 
 /* Custom Background Patterns */
 .bg-grid-pattern {
-  background-image: radial-gradient(rgba(216, 48, 37, 0.06) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(185, 32, 37, 0.06) 1px, transparent 1px);
   background-size: 28px 28px;
 }
 
@@ -53,8 +55,8 @@
 
 .kanta-glass-card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 35px -10px rgba(216, 48, 37, 0.12), 0 10px 15px -3px rgba(0, 0, 0, 0.05);
-  border-color: rgba(216, 48, 37, 0.3);
+  box-shadow: 0 20px 35px -10px rgba(185, 32, 37, 0.12), 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+  border-color: rgba(185, 32, 37, 0.35);
 }
 
 /* Floating animation helper */

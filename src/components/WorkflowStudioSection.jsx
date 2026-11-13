@@ -22,7 +22,7 @@ export default function WorkflowStudioSection() {
       desc: 'Extract document text & run GPT-4o / Claude models.',
       icon: Cpu,
       bg: 'bg-red-50/60 border border-red-200/80',
-      iconBg: 'bg-red-100 text-[#D83025] border border-red-200',
+      iconBg: 'bg-red-100 text-[#B92025] border border-red-200',
       nodes: [
         { label: 'LLM Generator', icon: Cpu },
         { label: 'Vision OCR Parse', icon: FileText },
@@ -34,8 +34,8 @@ export default function WorkflowStudioSection() {
       title: 'Actions & Logic Rules',
       desc: 'Connect REST APIs, Python/JS code, and If-Else rules.',
       icon: Zap,
-      bg: 'bg-orange-50/60 border border-orange-200/80',
-      iconBg: 'bg-orange-100 text-[#FF5722] border border-orange-200',
+      bg: 'bg-red-50/40 border border-red-200/60',
+      iconBg: 'bg-red-100 text-[#B92025] border border-red-200',
       nodes: [
         { label: 'If-Else Rule', icon: GitBranch },
         { label: 'HTTP API Call', icon: Globe },
@@ -65,12 +65,12 @@ export default function WorkflowStudioSection() {
           
           {/* LEFT COLUMN: Section Header & Compact Feature Checklist */}
           <div className="lg:col-span-5 space-y-3">
-            <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+            <p className="text-xs sm:text-sm font-bold tracking-wider text-[#B92025] uppercase font-['Outfit']">
               Workflow Studio
             </p>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 font-['Outfit'] tracking-tight leading-tight">
-              Ready for any <span className="text-[#D83025]">automation</span>
+              Ready for any <span className="text-[#B92025]">automation</span>
             </h2>
 
             <p className="text-slate-600 text-xs sm:text-sm font-medium leading-relaxed">
@@ -79,16 +79,16 @@ export default function WorkflowStudioSection() {
 
             {/* Compact Feature Highlight Cards */}
             <div className="space-y-2.5 pt-1">
-              <div className="bg-[#FAF6F0] p-3.5 rounded-2xl border border-slate-200/90 flex items-start gap-3 shadow-2xs hover:border-[#D83025] transition-colors">
-                <CheckCircle2 size={16} className="text-[#D83025] shrink-0 mt-0.5" />
+              <div className="bg-[#FAF6F0] p-3.5 rounded-2xl border border-slate-200/90 flex items-start gap-3 shadow-2xs hover:border-[#B92025] transition-colors">
+                <CheckCircle2 size={16} className="text-[#B92025] shrink-0 mt-0.5" />
                 <div>
                   <strong className="text-xs font-bold text-slate-900 block font-['Outfit']">Parallel Execution</strong>
                   <span className="text-[10px] text-slate-500 font-medium">Independent nodes run simultaneously via ThreadPool</span>
                 </div>
               </div>
 
-              <div className="bg-[#FAF6F0] p-3.5 rounded-2xl border border-slate-200/90 flex items-start gap-3 shadow-2xs hover:border-[#FF5722] transition-colors">
-                <CheckCircle2 size={16} className="text-[#FF5722] shrink-0 mt-0.5" />
+              <div className="bg-[#FAF6F0] p-3.5 rounded-2xl border border-slate-200/90 flex items-start gap-3 shadow-2xs hover:border-[#B92025] transition-colors">
+                <CheckCircle2 size={16} className="text-[#B92025] shrink-0 mt-0.5" />
                 <div>
                   <strong className="text-xs font-bold text-slate-900 block font-['Outfit']">Conditional Branching</strong>
                   <span className="text-[10px] text-slate-500 font-medium">14+ operators: equals, contains, regex, and more</span>
@@ -111,7 +111,7 @@ export default function WorkflowStudioSection() {
             {/* Header Bar */}
             <div className="flex items-center justify-between border-b border-slate-200 pb-3">
               <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-full bg-red-50 text-[#D83025] flex items-center justify-center border border-red-100 shadow-2xs">
+                <div className="w-8 h-8 rounded-full bg-red-50 text-[#B92025] flex items-center justify-center border border-red-100 shadow-2xs">
                   <Terminal size={14} />
                 </div>
                 <div>
@@ -154,7 +154,7 @@ export default function WorkflowStudioSection() {
                         const NodeIcon = nodeItem.icon;
                         return (
                           <span key={nIdx} className="inline-flex items-center gap-1 text-[9px] font-bold bg-white text-slate-800 px-2.5 py-0.5 rounded-full border border-slate-200">
-                            <NodeIcon size={10} className="text-[#D83025]" />
+                            <NodeIcon size={10} className="text-[#B92025]" />
                             <span>{nodeItem.label}</span>
                           </span>
                         );
@@ -168,10 +168,10 @@ export default function WorkflowStudioSection() {
             {/* Simple Bottom Ribbon */}
             <div className="pt-3 border-t border-slate-200 flex items-center justify-between text-[10px] text-slate-500 font-mono">
               <span className="flex items-center gap-1.5">
-                <Sparkles size={12} className="text-[#D83025]" />
+                <Sparkles size={12} className="text-[#B92025]" />
                 <span>Drag & drop nodes visually</span>
               </span>
-              <span className="text-[#D83025] font-bold px-3 py-0.5 rounded-full border border-red-100 bg-white">100% No-Code</span>
+              <span className="text-[#B92025] font-bold px-3 py-0.5 rounded-full border border-red-100 bg-white">100% No-Code</span>
             </div>
 
           </div>

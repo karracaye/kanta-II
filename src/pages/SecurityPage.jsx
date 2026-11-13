@@ -41,12 +41,12 @@ export default function SecurityPage() {
         
         {/* Header */}
         <div className="max-w-3xl space-y-3">
-          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#D83025] uppercase font-['Outfit']">
+          <p className="text-xs sm:text-sm font-bold tracking-wider text-[#B92025] uppercase font-['Outfit']">
             Trust & Compliance
           </p>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight font-['Outfit']">
             Security and AI governance, <br />
-            <span className="text-[#D83025]">built in.</span>
+            <span className="text-[#B92025]">built in.</span>
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-slate-500 font-medium leading-relaxed font-['Plus_Jakarta_Sans']">
             How Kanta hosts your data, controls access, governs AI, and records what happened.
@@ -59,7 +59,7 @@ export default function SecurityPage() {
           {/* Section 1: Hosting and Data */}
           <div className="kanta-glass-card rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm">
             <div className="flex items-center gap-3 pb-3 border-b border-slate-100">
-              <div className="w-10 h-10 rounded-2xl bg-red-50 text-[#D83025] flex items-center justify-center shadow-2xs">
+              <div className="w-10 h-10 rounded-2xl bg-red-50 text-[#B92025] flex items-center justify-center shadow-2xs">
                 <Server size={20} />
               </div>
               <h2 className="text-xl font-bold text-slate-900 font-['Outfit']">
@@ -69,7 +69,7 @@ export default function SecurityPage() {
             <ul className="space-y-3 text-sm text-slate-600 font-medium font-['Plus_Jakarta_Sans']">
               {hostingPoints.map((pt, idx) => (
                 <li key={idx} className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#D83025] mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#B92025] mt-2 shrink-0" />
                   <span className="leading-relaxed">{pt}</span>
                 </li>
               ))}
@@ -79,7 +79,7 @@ export default function SecurityPage() {
           {/* Section 2: Access Control */}
           <div className="kanta-glass-card rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm">
             <div className="flex items-center gap-3 pb-3 border-b border-slate-100">
-              <div className="w-10 h-10 rounded-2xl bg-red-50 text-[#D83025] flex items-center justify-center shadow-2xs">
+              <div className="w-10 h-10 rounded-2xl bg-red-50 text-[#B92025] flex items-center justify-center shadow-2xs">
                 <Lock size={20} />
               </div>
               <h2 className="text-xl font-bold text-slate-900 font-['Outfit']">
@@ -89,7 +89,7 @@ export default function SecurityPage() {
             <ul className="space-y-3 text-sm text-slate-600 font-medium font-['Plus_Jakarta_Sans']">
               {accessPoints.map((pt, idx) => (
                 <li key={idx} className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#D83025] mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#B92025] mt-2 shrink-0" />
                   <span className="leading-relaxed">{pt}</span>
                 </li>
               ))}
@@ -99,7 +99,7 @@ export default function SecurityPage() {
           {/* Section 3: AI Governance */}
           <div className="kanta-glass-card rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm">
             <div className="flex items-center gap-3 pb-3 border-b border-slate-100">
-              <div className="w-10 h-10 rounded-2xl bg-red-50 text-[#D83025] flex items-center justify-center shadow-2xs">
+              <div className="w-10 h-10 rounded-2xl bg-red-50 text-[#B92025] flex items-center justify-center shadow-2xs">
                 <Bot size={20} />
               </div>
               <h2 className="text-xl font-bold text-slate-900 font-['Outfit']">
@@ -109,7 +109,7 @@ export default function SecurityPage() {
             <ul className="space-y-3 text-sm text-slate-600 font-medium font-['Plus_Jakarta_Sans']">
               {governancePoints.map((pt, idx) => (
                 <li key={idx} className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#D83025] mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#B92025] mt-2 shrink-0" />
                   <span className="leading-relaxed">{pt}</span>
                 </li>
               ))}
@@ -119,7 +119,7 @@ export default function SecurityPage() {
           {/* Section 4: Audit */}
           <div className="kanta-glass-card rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm">
             <div className="flex items-center gap-3 pb-3 border-b border-slate-100">
-              <div className="w-10 h-10 rounded-2xl bg-red-50 text-[#D83025] flex items-center justify-center shadow-2xs">
+              <div className="w-10 h-10 rounded-2xl bg-red-50 text-[#B92025] flex items-center justify-center shadow-2xs">
                 <Shield size={20} />
               </div>
               <h2 className="text-xl font-bold text-slate-900 font-['Outfit']">
@@ -129,7 +129,7 @@ export default function SecurityPage() {
             <ul className="space-y-3 text-sm text-slate-600 font-medium font-['Plus_Jakarta_Sans']">
               {auditPoints.map((pt, idx) => (
                 <li key={idx} className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#D83025] mt-2 shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#B92025] mt-2 shrink-0" />
                   <span className="leading-relaxed">{pt}</span>
                 </li>
               ))}
@@ -139,7 +139,7 @@ export default function SecurityPage() {
         </div>
 
         {/* Security Call to Action */}
-        <div className="bg-gradient-to-br from-red-50/60 via-white to-orange-50/40 border-2 border-red-100 rounded-3xl p-8 sm:p-12 text-center space-y-5 shadow-lg">
+        <div className="bg-gradient-to-br from-red-50/60 via-white to-red-50/30 border-2 border-red-100 rounded-3xl p-8 sm:p-12 text-center space-y-5 shadow-lg">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-['Outfit']">
             Questions from your security team?
           </h2>
@@ -149,7 +149,7 @@ export default function SecurityPage() {
           <div className="pt-2">
             <Link
               to="/demo"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#D83025] hover:bg-[#C0261D] text-white font-bold text-sm sm:text-base transition-all shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#B92025] hover:opacity-90 text-white font-bold text-sm sm:text-base transition-all shadow-md hover:shadow-lg active:scale-95 cursor-pointer"
             >
               <span>Book a demo</span>
               <ArrowRight size={18} />

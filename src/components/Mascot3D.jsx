@@ -52,16 +52,16 @@ function RobotModel({ mousePosition, isHovered }) {
     clearcoatRoughness: 0.1,
   });
 
-  // Orange accent material
+  // Warm accent material
   const orangeMaterial = new THREE.MeshStandardMaterial({
-    color: '#FF5722',
+    color: '#ED683C',
     roughness: 0.3,
     metalness: 0.2,
   });
 
   // Red accent material
   const redMaterial = new THREE.MeshStandardMaterial({
-    color: '#D83025',
+    color: '#B92025',
     roughness: 0.3,
     metalness: 0.2,
   });
@@ -284,7 +284,7 @@ export default function Mascot3D() {
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Background Soft Radial Glow */}
-      <div className="absolute inset-0 bg-radial from-orange-500/15 via-red-500/5 to-transparent rounded-full blur-3xl pointer-events-none -z-10 transform scale-90"></div>
+      <div className="absolute inset-0 bg-radial from-red-500/15 via-red-950/5 to-transparent rounded-full blur-3xl pointer-events-none -z-10 transform scale-90"></div>
 
       <Canvas
         camera={{ position: [0, 0.4, 4.2], fov: 45 }}
@@ -293,7 +293,7 @@ export default function Mascot3D() {
         <ambientLight intensity={0.9} />
         <directionalLight position={[5, 8, 5]} intensity={1.4} color="#FFFFFF" castShadow />
         <directionalLight position={[-5, 3, -2]} intensity={0.6} color="#FF9800" />
-        <pointLight position={[0, -2, 2]} intensity={0.5} color="#E53935" />
+        <pointLight position={[0, -2, 2]} intensity={0.5} color="#B92025" />
 
         <Float speed={2} rotationIntensity={0.3} floatIntensity={0.4}>
           <RobotModel mousePosition={mousePosition} isHovered={isHovered} />
